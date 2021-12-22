@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>SnatchApp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SnatchMessage</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>messages.csv<datalist><option>message.csv</option><option>messages.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=message_input_textarea<datalist><option>id=message_input_textarea</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Today'])[2]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Friday'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina_b'])[3]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hey! I am here! I am watching....😉'])[1]/preceding::textarea[1]</option><option>//textarea[@id='message_input_textarea']</option><option>//div[@id='container-1']/content/sn-chat/div/div/sn-chat-footer/div/div/div/textarea</option><option>//textarea</option><option>css=#message_input_textarea</option></datalist></td><td>${message}</td>
+</tr>
+<tr><td>click</td><td>//button[@class='chat-footer__button mat-icon-button ng-star-inserted']<datalist><option>id=message_input_textarea</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Today'])[2]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Friday'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina_b'])[3]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hey! I am here! I am watching....😉'])[1]/preceding::textarea[1]</option><option>//textarea[@id='message_input_textarea']</option><option>//div[@id='container-1']/content/sn-chat/div/div/sn-chat-footer/div/div/div/textarea</option><option>//textarea</option><option>css=#message_input_textarea</option><option>//button[@class='chat-footer__button mat-icon-button ng-star-inserted']</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Message_cycle</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>1<datalist><option>message</option><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>store</td><td>Hello test1<datalist><option>message.csv</option><option>This is test message number</option><option>This is Irina 2  sent message number</option><option>This is Irina2  sent message number</option><option>Added new user irina_b</option><option>Continue</option><option>This is COMPLETELY new! Не каждая российская актриса может похвастаться знакомством с Колином Фертом или дружбой с Хью Джекманом. А вот Светлана Ходченкова может. Вообще, ей есть чем похвастаться. Например, дебютом у Говорухина, признанием в Голливуде… Да даже красивыми ногами. О том, чем еще примечательна Светлана, рассказываем в ее день рождения — сегодня актрисе исполняется 36. Читать полностью:  </option><option>Это проверка</option><option>Новая роверка</option><option>Два акка</option><option>Ответил</option><option>Hello test1</option></datalist></td><td>message</td>
+</tr>
+<tr><td>while</td><td>i&lt;100<datalist><option>i&gt;100</option><option>i&lt;100</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=message_input_textarea<datalist><option>id=message_input_textarea</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Today'])[2]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Friday'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina_b'])[3]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hey! I am here! I am watching....😉'])[1]/preceding::textarea[1]</option><option>//textarea[@id='message_input_textarea']</option><option>//div[@id='container-1']/content/sn-chat/div/div/sn-chat-footer/div/div/div/textarea</option><option>//textarea</option><option>css=#message_input_textarea</option></datalist></td><td>${message} ${i}</td>
+</tr>
+<tr><td>click</td><td>//button[@class='chat-footer__button mat-icon-button ng-star-inserted']<datalist><option>//button[@class='chat-footer__button mat-icon-button ng-star-inserted']</option><option>id=message_input_textarea</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Today'])[2]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Friday'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina_b'])[3]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hey! I am here! I am watching....😉'])[1]/preceding::textarea[1]</option><option>//textarea[@id='message_input_textarea']</option><option>//div[@id='container-1']/content/sn-chat/div/div/sn-chat-footer/div/div/div/textarea</option><option>//textarea</option><option>css=#message_input_textarea</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>2000<datalist><option>2000</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

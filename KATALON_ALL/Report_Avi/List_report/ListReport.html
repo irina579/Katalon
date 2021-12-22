@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>ListReport</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Avi_list</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td><datalist><option>""</option><option></option></datalist></td><td>x</td>
+</tr>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>reporters.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>https://issues.belitsoft.com/browse/${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='reporter-val']<datalist><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>//span[@id='reporter-val']</option></datalist></td><td>reporter</td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='status-val']<datalist><option>//span[@id='status-val']</option></datalist></td><td>status</td>
+</tr>
+<tr><td>store</td><td>${x}${link};${status};${reporter}TAB<datalist><option>${link} ${reporter} ${status}</option><option>${x}${link};${status};${reporter};</option><option>${x}${link};${status};${reporter}TAB</option></datalist></td><td>x</td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${x}<datalist><option>${x}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Zuzex_list</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td><datalist><option></option><option>""</option></datalist></td><td>x</td>
+</tr>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td><datalist><option></option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>open</td><td>https://service.zuzex.com/browse/${link}<datalist><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>https://service.zuzex.com/browse/${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='reporter-val']<datalist><option>//span[@id='reporter-val']</option><option>${link1}${start_date}${link2}${end_date}${link3}</option></datalist></td><td>reporter</td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='status-val']<datalist><option>//span[@id='status-val']</option></datalist></td><td>status</td>
+</tr>
+<tr><td>storeXpathCount</td><td>//a[@class='lozenge']<datalist><option>//a[@class='lozenge']</option></datalist></td><td>num_labels</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&lt;(num_labels+1)<datalist><option>i&lt;num_labels+1)</option><option>i&lt;(num_labels+1)</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>xpath=(//a[@class='lozenge'])[${i}]<datalist><option>//a[@class='lozenge']</option><option>xpath=(//a[@class='lozenge'])[${i}]</option></datalist></td><td>label</td>
+</tr>
+<tr><td>store</td><td>${label_full} ${label}<datalist><option>${label_full};${label}</option><option>${label_full}/${label}</option><option>${label_full} ${label}</option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>${x}${link},${status},${reporter},${label_full}TAB<datalist><option>${x}${link};${status};${reporter}TAB</option><option>${link} ${reporter} ${status}</option><option>${x}${link};${status};${reporter};</option><option>${x}${link},${status},${reporter},${full_label}TAB</option><option>${x}${link},${status},${reporter},${label_full}TAB</option></datalist></td><td>x</td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${x}<datalist><option>${x}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Assign_to_me</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td><datalist><option></option><option>""</option></datalist></td><td>x</td>
+</tr>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td><datalist><option></option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>open</td><td>https://service.zuzex.com/browse/${link}<datalist><option>https://service.zuzex.com/browse/${link}</option><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='reporter-val']<datalist><option>//span[@id='reporter-val']</option><option>${link1}${start_date}${link2}${end_date}${link3}</option></datalist></td><td>reporter</td>
+</tr>
+<tr><td>storeElementPresent</td><td>id=issue_summary_reporter_belitsoft<datalist><option>id=issue_summary_reporter_belitsoft</option></datalist></td><td>us</td>
+</tr>
+<tr><td>if</td><td>us<datalist><option>${reporter}=Belitsoft Tester</option><option>${reporter}='Belitsoft Tester'</option><option>${reporter} eguals 'Belitsoft Tester'</option><option>'a' equals 'a'</option><option>'a' contains 'a'</option><option>'a' = 'a'</option><option>a = a</option><option>"a" = "a"</option><option>us</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>id=assign-to-me<datalist><option>id=assign-to-me</option></datalist></td><td>here</td>
+</tr>
+<tr><td>if</td><td>here<datalist><option>here</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=assign-to-me<datalist><option>${reporter}</option><option>id=assign-to-me</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=issue_summary_assignee_belitsoft<datalist><option>id=issue_summary_assignee_belitsoft</option></datalist></td><td></td>
+</tr>
+<tr><td>endif</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='status-val']<datalist><option>//span[@id='status-val']</option></datalist></td><td>status</td>
+</tr>
+<tr><td>storeXpathCount</td><td>//a[@class='lozenge']<datalist><option>//a[@class='lozenge']</option></datalist></td><td>num_labels</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&lt;(num_labels+1)<datalist><option>i&lt;(num_labels+1)</option><option>i&lt;num_labels+1)</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>xpath=(//a[@class='lozenge'])[${i}]<datalist><option>xpath=(//a[@class='lozenge'])[${i}]</option><option>//a[@class='lozenge']</option></datalist></td><td>label</td>
+</tr>
+<tr><td>store</td><td>${label_full} ${label}<datalist><option>${label_full} ${label}</option><option>${label_full};${label}</option><option>${label_full}/${label}</option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>${x}${link},${status},${reporter},${label_full}TAB<datalist><option>${x}${link},${status},${reporter},${label_full}TAB</option><option>${x}${link};${status};${reporter}TAB</option><option>${link} ${reporter} ${status}</option><option>${x}${link};${status};${reporter};</option><option>${x}${link},${status},${reporter},${full_label}TAB</option></datalist></td><td>x</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${x}<datalist><option>${x}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Assign_with_old_version</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td><datalist><option></option><option>""</option></datalist></td><td>x</td>
+</tr>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td><datalist><option></option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>open</td><td>https://service.zuzex.com/browse/${link}<datalist><option>https://service.zuzex.com/browse/${link}</option><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='reporter-val']<datalist><option>//span[@id='reporter-val']</option><option>${link1}${start_date}${link2}${end_date}${link3}</option></datalist></td><td>reporter</td>
+</tr>
+<tr><td>storeElementPresent</td><td>id=issue_summary_reporter_belitsoft<datalist><option>id=issue_summary_reporter_belitsoft</option></datalist></td><td>us</td>
+</tr>
+<tr><td>storeTextPresent</td><td>https://issues.belitsoft.com/browse<datalist><option>https://issues.belitsoft.com/browse</option></datalist></td><td>old</td>
+</tr>
+<tr><td>storeEval</td><td>us+old<datalist><option>us+old</option></datalist></td><td>condition</td>
+</tr>
+<tr><td>if</td><td>${condition}&gt;0<datalist><option>us</option><option>${reporter}=Belitsoft Tester</option><option>${reporter}='Belitsoft Tester'</option><option>${reporter} eguals 'Belitsoft Tester'</option><option>'a' equals 'a'</option><option>'a' contains 'a'</option><option>'a' = 'a'</option><option>a = a</option><option>"a" = "a"</option><option>us*old</option><option>${condition}&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>id=assign-to-me<datalist><option>id=assign-to-me</option></datalist></td><td>here</td>
+</tr>
+<tr><td>if</td><td>here<datalist><option>here</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=assign-to-me<datalist><option>id=assign-to-me</option><option>${reporter}</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=issue_summary_assignee_belitsoft<datalist><option>id=issue_summary_assignee_belitsoft</option></datalist></td><td></td>
+</tr>
+<tr><td>endif</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@id='status-val']<datalist><option>//span[@id='status-val']</option></datalist></td><td>status</td>
+</tr>
+<tr><td>storeXpathCount</td><td>//a[@class='lozenge']<datalist><option>//a[@class='lozenge']</option></datalist></td><td>num_labels</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&lt;(num_labels+1)<datalist><option>i&lt;(num_labels+1)</option><option>i&lt;num_labels+1)</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>xpath=(//a[@class='lozenge'])[${i}]<datalist><option>xpath=(//a[@class='lozenge'])[${i}]</option><option>//a[@class='lozenge']</option></datalist></td><td>label</td>
+</tr>
+<tr><td>store</td><td>${label_full} ${label}<datalist><option>${label_full} ${label}</option><option>${label_full};${label}</option><option>${label_full}/${label}</option></datalist></td><td>label_full</td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>${x}${link},${status},${reporter},${label_full}TAB<datalist><option>${x}${link},${status},${reporter},${label_full}TAB</option><option>${x}${link};${status};${reporter}TAB</option><option>${link} ${reporter} ${status}</option><option>${x}${link};${status};${reporter};</option><option>${x}${link},${status},${reporter},${full_label}TAB</option></datalist></td><td>x</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${x}<datalist><option>${x}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ResolvedBelitsoft</td></tr>
+</thead>
+<tbody>
+<tr><td>runScript</td><td>return prompt ('Input fix version', 'Prod_11_Sept')<datalist><option>return new Date(${year},${month},${day_before}).getFullYear()</option><option>new Date(${year},${month},${day_before}).getFullYear()</option><option>return Test</option><option>return prompt ('Input fix version', 'Prod_11_Sept')</option></datalist></td><td>version</td>
+</tr>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>https://service.zuzex.com/browse/${link}</option><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>//span[contains(text(), 'Resolve Issue')]<datalist><option>id=issue_summary_assignee_belitsoft</option><option>//span[contains(text(), 'Resolve Issue')]</option></datalist></td><td>not_resolved</td>
+</tr>
+<tr><td>if</td><td>${not_resolved}<datalist><option>${not_resolved}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(), 'Resolve Issue')]<datalist><option>//span[contains(text(), 'Resolve Issue')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start Progress'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='More'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Close Issue'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Admin'])[1]/preceding::span[2]</option><option>//a[@id='action_id_5']/span</option><option>//div[4]/a[2]/span</option><option>css=#action_id_5 &gt; span.trigger-label</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//textarea[@id='fixVersions-textarea']<datalist><option>//textarea[@id='fixVersions-textarea']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fix Version/s'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Required'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start typing to get a list of possible matches or press down to select.'])[1]/preceding::span[2]</option><option>//div[@id='fixVersions-multi-select']/span</option><option>//div[7]/div/span</option><option>css=span.icon.noloading.drop-menu</option></datalist></td><td>${version}</td>
+</tr>
+<tr><td>waitForVisible</td><td>link=${version}<datalist><option>link=${version}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=${version}<datalist><option>link=Prod_11_Sept</option><option>link=${version}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=issue-workflow-transition-submit<datalist><option>id=issue-workflow-transition-submit</option><option>name=Transition</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Viewable by All Users'])[2]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='This comment will be Viewable by All Users'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='View all (16 more)'])[2]/preceding::input[1]</option><option>//input[@id='issue-workflow-transition-submit']</option><option>//form[@id='issue-workflow-transition']/div[2]/div/input</option><option>//form/div[2]/div/input</option><option>css=#issue-workflow-transition-submit</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

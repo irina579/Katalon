@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Register_logIN_01</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login_general</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me<datalist><option>https://snatchbot.me/login</option><option>https://snatchbot.me</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[@href='/login']<datalist><option>//a[text()='Login']</option><option>//a[@href='/login']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>id=email<datalist><option>id=email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log In'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[2]</option><option>//input[@id='email']</option><option>//input</option><option>css=#email</option></datalist></td><td>test2_2016@mail.ru</td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::input[1]</option><option>//input[@id='password']</option><option>//md-input-container[2]/input</option><option>css=#password</option></datalist></td><td>123456</td>
+</tr>
+<tr><td>click</td><td>name=Login<datalist><option>name=Login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot your password?'])[1]/preceding::button[1]</option><option>//button[@name='Login']</option><option>//button</option><option>css=button[name="Login"]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>Messages Exchanged (last 7 days)</option><option>//div[@translate='dashboard.last7days']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//div[@translate='dashboard.last7days']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//h3[@translate='dashboard.lastMonth']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//h3[@translate='dashboard.lastMonth']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.dashboard']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//a/span[@translate='navigate.dashboard']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.myBots']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//a/span[@translate='navigate.myBots']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.broadcast']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//a/span[@translate='navigate.broadcast']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.reports']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//a/span[@translate='navigate.reports']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.nlp']<datalist><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option><option>//a/span[@translate='navigate.nlp']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//a/span[@translate='navigate.logout']<datalist><option>Logout</option><option>//a/span[@translate='navigate.logout']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a/span[@translate='navigate.logout']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='exit_to_app'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina Testeam'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Messages Exchanged (last 7 days)'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/preceding::span[2]</option><option>//section[@id='bot-menu-user-area']/nav/ul/span/li[7]/a/span</option><option>//li[7]/a/span</option><option>//a/span[text()='Logout']</option><option>//a/span[@translate='navigate.logout']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=home_a_revolution_platform<datalist><option>Create smart chatbots</option><option>id=home_a_revolution_platform</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>id=home_a_revolution_platform<datalist><option>Create smart chatbots</option><option>id=home_a_revolution_platform</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login_FB</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/login<datalist><option>https://snatchbot.me/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[@translate='login.logWithMe']<datalist><option>//span[@translate='login.logWithMe']</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>id=loginbutton<datalist><option>link=Continue</option><option>id=loginbutton</option></datalist></td><td>x</td>
+</tr>
+<tr><td>if</td><td>x<datalist><option>${page_title}="Log into Facebook | Facebook"</option><option>${page_title}='Log into Facebook | Facebook'</option><option>page_title='Log into Facebook | Facebook'</option><option>x</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>id=pass<datalist><option>id=pass</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>id=pass</option><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log Into Facebook'])[1]/following::input[19]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/following::input[19]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log In'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot account?'])[1]/preceding::input[1]</option><option>//input[@id='pass']</option><option>//div[@id='loginform']/div[2]/input</option><option>//div[2]/input</option><option>css=#pass</option></datalist></td><td>test2_2016@mail.ru</td>
+</tr>
+<tr><td>type</td><td>id=pass<datalist><option>id=pass</option><option>name=pass</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log Into Facebook'])[1]/following::input[19]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/following::input[19]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log In'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot account?'])[1]/preceding::input[1]</option><option>//input[@id='pass']</option><option>//div[@id='loginform']/div[2]/input</option><option>//div[2]/input</option><option>css=#pass</option></datalist></td><td>bqa_2018!*</td>
+</tr>
+<tr><td>click</td><td>id=loginbutton<datalist><option>id=loginbutton</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log Into Facebook'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot account?'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign up for Facebook'])[1]/preceding::button[1]</option><option>//button[@id='loginbutton']</option><option>//div[@id='loginform']/div[3]/button</option><option>//button</option><option>css=#loginbutton</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>//div[@translate='dashboard.last7days']</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>//div[@translate='dashboard.last7days']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//h3[@translate='dashboard.lastMonth']<datalist><option>//h3[@translate='dashboard.lastMonth']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.dashboard']<datalist><option>//a/span[@translate='navigate.dashboard']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.myBots']<datalist><option>//a/span[@translate='navigate.myBots']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.broadcast']<datalist><option>//a/span[@translate='navigate.broadcast']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.reports']<datalist><option>//a/span[@translate='navigate.reports']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.nlp']<datalist><option>//a/span[@translate='navigate.nlp']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//a/span[@translate='navigate.logout']<datalist><option>//a/span[@translate='navigate.logout']</option><option>Logout</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a/span[@translate='navigate.logout']<datalist><option>//a/span[@translate='navigate.logout']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='exit_to_app'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina Testeam'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Messages Exchanged (last 7 days)'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/preceding::span[2]</option><option>//section[@id='bot-menu-user-area']/nav/ul/span/li[7]/a/span</option><option>//li[7]/a/span</option><option>//a/span[text()='Logout']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=home_a_revolution_platform<datalist><option>id=home_a_revolution_platform</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>id=home_a_revolution_platform<datalist><option>id=home_a_revolution_platform</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login_Gmail</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/login<datalist><option>https://snatchbot.me/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[@translate='login.logWithMe'])[2]<datalist><option>xpath=(//span[@translate='login.logWithMe'])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>storeTextPresent</td><td>Sign in with Google<datalist><option>id=loginbutton</option><option>link=Continue</option><option>Выберите аккаунт</option><option>Сменить аккаунт</option><option>Google</option><option>Sign in</option><option>Sign in with Google</option></datalist></td><td>x</td>
+</tr>
+<tr><td>storeTextPresent</td><td>Use another account<datalist><option>id=loginbutton</option><option>link=Continue</option><option>Выберите аккаунт</option><option>Сменить аккаунт</option><option>Use another account</option></datalist></td><td>y</td>
+</tr>
+<tr><td>if</td><td>x<datalist><option>x</option><option>${page_title}="Log into Facebook | Facebook"</option><option>${page_title}='Log into Facebook | Facebook'</option><option>page_title='Log into Facebook | Facebook'</option><option>x&amp;y</option><option>(x) or (y)</option></datalist></td><td></td>
+</tr>
+<tr><td>if</td><td>y<datalist><option>y</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[text()='Use another account']<datalist><option>//div[text()='Сменить аккаунт']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register'])[2]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create smart chatbots for multi-channel messaging on our revolutionary platform'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Watch The Video'])[1]/preceding::a[1]</option><option>xpath=(//a[contains(text(),'Login')])[2]</option><option>//body[@id='page-top']/nav/div[3]/a[2]</option><option>xpath=(//a[contains(@href, '/login')])[2]</option><option>//a[2]</option><option>css=div.pull-right.navbar-login &gt; a.button.button--login.button--log-in</option><option>//div[text()='Use another account']</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>name=identifier<datalist><option>name=identifier</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=identifier<datalist><option>id=identifierId</option><option>name=identifier</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='snatchbot.me'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли адрес эл. почты?'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Далее'])[1]/preceding::input[4]</option><option>//input[@id='identifierId']</option><option>//div[@id='view_container']/div/div/div[2]/div/div/div/form/content/section/div/content/div/div/div/div/div/input</option><option>//input</option><option>css=#identifierId</option></datalist></td><td>3test16@gmail.com</td>
+</tr>
+<tr><td>click</td><td>id=identifierNext<datalist><option>id=identifierNext</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Сначала подтвердите, что это ваш аккаунт'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Слишком много неудачных попыток'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли пароль?'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='‪български‬'])[1]/preceding::span[2]</option><option>//div[@id='passwordNext']/content/span</option><option>//div/div/content/span</option><option>css=span.RveJvd.snByac</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>name=password<datalist><option>name=password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Сначала подтвердите, что это ваш аккаунт'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Слишком много неудачных попыток'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Далее'])[2]/preceding::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли пароль?'])[1]/preceding::input[3]</option><option>//input[@name='password']</option><option>//div[@id='password']/div/div/div/input</option><option>//div[2]/div/div/div/div/input</option><option>css=input[name="password"]</option></datalist></td><td>1passwordtest3</td>
+</tr>
+<tr><td>click</td><td>id=passwordNext<datalist><option>id=passwordNext</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>//div[@translate='dashboard.last7days']</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//div[@translate='dashboard.last7days']<datalist><option>//div[@translate='dashboard.last7days']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//h3[@translate='dashboard.lastMonth']<datalist><option>//h3[@translate='dashboard.lastMonth']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.dashboard']<datalist><option>//a/span[@translate='navigate.dashboard']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.myBots']<datalist><option>//a/span[@translate='navigate.myBots']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.broadcast']<datalist><option>//a/span[@translate='navigate.broadcast']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.reports']<datalist><option>//a/span[@translate='navigate.reports']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//a/span[@translate='navigate.nlp']<datalist><option>//a/span[@translate='navigate.nlp']</option><option>"Dashboard"</option><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//a/span[@translate='navigate.logout']<datalist><option>//a/span[@translate='navigate.logout']</option><option>Logout</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a/span[@translate='navigate.logout']<datalist><option>//a/span[@translate='navigate.logout']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='exit_to_app'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina Testeam'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Messages Exchanged (last 7 days)'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/preceding::span[2]</option><option>//section[@id='bot-menu-user-area']/nav/ul/span/li[7]/a/span</option><option>//li[7]/a/span</option><option>//a/span[text()='Logout']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=home_a_revolution_platform<datalist><option>id=home_a_revolution_platform</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>id=home_a_revolution_platform<datalist><option>id=home_a_revolution_platform</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Register</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me<datalist><option>https://snatchbot.me</option><option>https://snatchbot.me/login</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>auto_test33333@yopmail.com<datalist><option>auto_test2@yopmail.com</option><option>auto_test3@yopmail.com</option><option>auto_test33333@yopmail.com</option></datalist></td><td>email</td>
+</tr>
+<tr><td>verifyElementPresent</td><td>id=home_a_revolution_platform<datalist><option>//a[text()='Register']</option><option>ARTIFICIAL INTELLIGENCE MADE EASY</option><option>id=home_a_revolution_platform</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[@href='/register']<datalist><option>//a[text()='Login']</option><option>//a[text()='Register']</option><option>//a[@href='/register']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>id=firstname<datalist><option>id=firstname</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=firstname<datalist><option>id=firstname</option><option>name=firstname</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='First Name:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Last Name:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::input[2]</option><option>//input[@id='firstname']</option><option>//input</option><option>css=#firstname</option></datalist></td><td>Ivan</td>
+</tr>
+<tr><td>type</td><td>id=lastname<datalist><option>id=lastname</option><option>name=lastname</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Last Name:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='First Name:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/preceding::input[2]</option><option>//input[@id='lastname']</option><option>//md-input-container[2]/input</option><option>css=#lastname</option></datalist></td><td>Ivanov</td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Last Name:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Private'])[1]/preceding::input[2]</option><option>//input[@id='email']</option><option>//md-input-container[3]/input</option><option>css=#email</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Private'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Business'])[1]/preceding::input[1]</option><option>//input[@id='password']</option><option>//md-input-container[4]/input</option><option>css=#password</option></datalist></td><td>123456</td>
+</tr>
+<tr><td>click</td><td>//span[@translate='register.private']<datalist><option>//*[contains(text(), 'Sign Up')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='keyboard_arrow_up'])[1]/preceding::h3[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='English'])[1]/preceding::h3[1]</option><option>//h3</option><option>css=h3</option><option>//*[contains(text(), 'Sign up')]</option><option>//*[contains(text(), 'Private')]</option><option>//span</option><option>//span[@translate='register.private']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[@translate='auth.singUP']<datalist><option>//span[@translate='register.private']</option><option>//*[contains(text(), 'Sign Up')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='keyboard_arrow_up'])[1]/preceding::h3[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='English'])[1]/preceding::h3[1]</option><option>//h3</option><option>css=h3</option><option>//*[contains(text(), 'Sign up')]</option><option>//*[contains(text(), 'Private')]</option><option>//span</option><option>//span[@translate='auth.singUP']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//h3[@translate='checkemail.title']<datalist><option>Great, Check your inbox</option><option>//h3[@translate='checkemail.title']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//h3[@translate='checkemail.title']<datalist><option>Email confirmation helps us to ensure your data will always be safe</option><option>//h3[@translate='checkemail.title']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>${email}<datalist><option>${email}</option><option>auto_test@yopmail.com</option><option>auto_test1@yopmail.com</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Email_verify</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://yopmail.com<datalist><option>http://www.yopmail.com/en/</option><option>http://yopmail.com</option><option>http://yopmail.com/en/</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>auto_test3@yopmail.com<datalist><option>auto_test3@yopmail.com</option><option>auto_test2@yopmail.com</option></datalist></td><td>email</td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='YOPmail : Disposable and Free email address.'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[2]</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Type the Email name of your choice<datalist><option>Create smart chatbots</option><option>Type the Email name of your choice</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[contains(@class,'sbut')]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[1]</option><option>//input[@value='Check Inbox']</option><option>//form[@id='f']/table/tbody/tr/td[4]/input</option><option>//td[4]/input</option><option>css=input.sbut</option><option>id=lrefr</option><option>//*[contains(@class,'sbut')]</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'newsletter@snatchbot.me')]<datalist><option>//span[contains(text(),'NoReply@snatchbot.me')]</option><option>//span[contains(text(),'newsletter@snatchbot.me')]</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=3<datalist><option>index=3</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[contains(text(),'https://snatchbot.me/auth/check_email')]<datalist><option>link=exact:https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='To proceed, click here:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a sweet day! – Mr Avi. B, Founder of the Snatch Group Ltd.'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you don’t know why you got this email, please tell us straight away so we can fix this for you.'])[1]/preceding::a[1]</option><option>//a[contains(text(),'https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb')]</option><option>//div[@id='mailmillieu']/div[2]/div[3]/div/p[6]/span/a</option><option>//a[@href='http://url8273.snatchbot.me/wf/click?upn=1PSimR6UlQhy-2BxcwOqmDmHgicPm-2F3zez3LWM5uUqVnW-2BpZ54-2BxU2Nxdgbug-2F8q8rZ-2BH2s7WVAU8nbYYGLq-2FXjK0pEoCV0LzQRgHNFpzkvRmPgZ-2BxrkFzbeuubFf24Wmy_RyNLN6asrV2G60RaxeiB0KzXRA0gaLDcgE3cH6XUiSjP8qk94gqv2cL7-2FJiSw1BEanzeiv3NvtivLX1nGXAazO0fpgx2QT3f4R-2BoPbdpEBWG0AsO3bVlTNkzhgdswziFaCUDiyCPWThCaopgWdtKwIJOyxQCkaZzmohyVjoFITsR5daQktIMxH8V2DDF3QV1PrUSW2hRsaII9DY-2BmRZmWg-3D-3D']</option><option>//span/a</option><option>css=span &gt; a</option><option>//link[contains(text(),'https://snatchbot.me/auth/check_email')]</option><option>//*[contains(text(),'https://snatchbot.me/auth/check_email')]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Delete_account</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me<datalist><option>https://snatchbot.me</option><option>https://snatchbot.me/login</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>auto_test3@yopmail.com<datalist><option>auto_test3@yopmail.com</option><option>auto_test2@yopmail.com</option></datalist></td><td>email</td>
+</tr>
+<tr><td>waitForTextPresent</td><td>SnatchBot eliminates complexity<datalist><option>SnatchBot eliminates complexity</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[text()='Login']<datalist><option>//a[text()='Login']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>id=email<datalist><option>id=email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log In'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[2]</option><option>//input[@id='email']</option><option>//input</option><option>css=#email</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::input[1]</option><option>//input[@id='password']</option><option>//md-input-container[2]/input</option><option>css=#password</option></datalist></td><td>123456</td>
+</tr>
+<tr><td>click</td><td>name=Login<datalist><option>name=Login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot your password?'])[1]/preceding::button[1]</option><option>//button[@name='Login']</option><option>//button</option><option>css=button[name="Login"]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Messages Exchanged (last 7 days)<datalist><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Ivan Ivanov<datalist><option>Logout</option><option>Ivan Ivanov</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a/span[text()='Ivan Ivanov']<datalist><option>//a/span[text()='Logout']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='exit_to_app'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Irina Testeam'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Messages Exchanged (last 7 days)'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/preceding::span[2]</option><option>//section[@id='bot-menu-user-area']/nav/ul/span/li[7]/a/span</option><option>//li[7]/a/span</option><option>//a/span[text()='Ivan Ivanov']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(), 'Delete Account')]<datalist><option>//button[contains(text(), 'Delete Account')]</option><option>//span[contains(text(), 'Delete Account')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[contains(text(), 'Ok')]<datalist><option>//button[contains(text(), 'OK')]</option><option>//button[contains(text(), 'Ok')]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Create smart chatbots<datalist><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Create smart chatbots<datalist><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MailRuVerify</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://mail.ru<datalist><option>https://mail.ru/?from=logout</option><option>https://mail.ru</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=mailbox:password<datalist><option>id=mailbox:password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Войти'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='@mail.ru'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли пароль?'])[1]/preceding::input[2]</option><option>//input[@id='mailbox:password']</option><option>//form[@id='auth']/div[2]/div[2]/div/input</option><option>//div[2]/div/input</option></datalist></td><td>test4_2016@mail.ru</td>
+</tr>
+<tr><td>type</td><td>id=mailbox:password<datalist><option>id=mailbox:password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Войти'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='@mail.ru'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли пароль?'])[1]/preceding::input[2]</option><option>//input[@id='mailbox:password']</option><option>//form[@id='auth']/div[2]/div[2]/div/input</option><option>//div[2]/div/input</option></datalist></td><td>zxasqw12</td>
+</tr>
+<tr><td>click</td><td>//input[contains(@class,'o-control')]<datalist><option>//input[contains(@class,'o-control')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Войти'])[1]/input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='@mail.ru'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Забыли пароль?'])[1]/preceding::input[3]</option><option>//input[@value='Войти']</option><option>//label[@id='mailbox:submit']/input</option><option>//label/input</option><option>css=input.o-control</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'newsletter@snatchbot.me')]<datalist><option>//div[contains(text(),'newsletter@snatchbot.me')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='inte-fx'])[1]/following::div[17]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='newsletter@snatchbot.me'])[1]/preceding::div[1]</option><option>//div[@id='b-letters']/div/div[2]/div/div[2]/div[2]/div/a/div[4]/div[3]/div/div</option><option>//div[2]/div/a/div[4]/div[3]/div/div</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[contains(text(),'https://snatchbot.me/auth/check_email')]<datalist><option>//*[contains(text(),'https://snatchbot.me/auth/check_email')]</option><option>link=exact:https://snatchbot.me/auth/check_email?token=2fe11fa4c33cea0f31cde79fb273572470568336</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='To proceed, click here:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a sweet day! – Mr Avi. B, Founder of the Snatch Group Ltd.'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you don’t know why you got this email, please tell us straight away so we can fix this for you.'])[1]/preceding::a[1]</option><option>//a[contains(text(),'https://snatchbot.me/auth/check_email?token=2fe11fa4c33cea0f31cde79fb273572470568336')]</option><option>//div[@id='style_15507385300000000987_BODY']/div/div[3]/div/p[6]/span/a</option><option>//a[contains(@href, 'https://snatchbot.me/auth/check_email?token=2fe11fa4c33cea0f31cde79fb273572470568336')]</option><option>//p[6]/span/a</option></datalist></td><td></td>
+</tr>
+<tr><td>storeAttribute</td><td>//div[@data-ng-controller='LoginCtrl']@data-ng-init<datalist><option>//div[@data-ng-controller='LoginCtrl']@data-ng-init</option></datalist></td><td>z</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Create_Bot&Interactions01</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">01_Login</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me<datalist><option>https://snatchbot.me</option><option>https://snatchbot.me/login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[text()='Login']<datalist><option>//a[text()='Login']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>id=email<datalist><option>id=email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log In'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[2]</option><option>//input[@id='email']</option><option>//input</option><option>css=#email</option></datalist></td><td>22@yopmail.com</td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::input[1]</option><option>//input[@id='password']</option><option>//md-input-container[2]/input</option><option>css=#password</option></datalist></td><td>123456</td>
+</tr>
+<tr><td>click</td><td>name=Login<datalist><option>name=Login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot your password?'])[1]/preceding::button[1]</option><option>//button[@name='Login']</option><option>//button</option><option>css=button[name="Login"]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Messages Exchanged (last 7 days)<datalist><option>Messages Exchanged (last 7 days)</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">02_Create_bot</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/<datalist><option>https://snatchbot.me/</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>ZetBot<datalist><option>ZetBot</option></datalist></td><td>name</td>
+</tr>
+<tr><td>waitForVisible</td><td>//span[text()='My Bots']<datalist><option>//span[text()='My Bots']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='My Bots']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='dashboard'])[1]/following::a[1]</option><option>//section[@id='bot-menu-user-area']/nav/ul/li[2]/a</option><option>//a[contains(@href, '/bots')]</option><option>//li[2]/a</option><option>My Bots</option><option>//span[text()='My Bots']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-icon[text()='add']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delete_forever'])[13]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='content_copy'])[13]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create Bot'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='keyboard_arrow_up'])[1]/preceding::md-icon[1]</option><option>//md-card[14]/button/md-icon</option><option>css=button.md-fab.md-button.md-ink-ripple &gt; md-icon.material-icons.ng-scope</option><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=botName<datalist><option>id=input_39</option><option>name=botName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name your Bot'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create New Bot'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(for your reference)'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Describe your bot'])[1]/preceding::input[1]</option><option>//input[@id='input_39']</option><option>//md-dialog[@id='dialogContent_41']/form/div/div/md-input-container/input</option><option>//md-input-container/input</option><option>css=#input_39</option></datalist></td><td>${name}</td>
+</tr>
+<tr><td>type</td><td>name=botDescription<datalist><option>id=input_39</option><option>name=botName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name your Bot'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create New Bot'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(for your reference)'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Describe your bot'])[1]/preceding::input[1]</option><option>//input[@id='input_39']</option><option>//md-dialog[@id='dialogContent_41']/form/div/div/md-input-container/input</option><option>//md-input-container/input</option><option>css=#input_39</option><option>name=botDescription</option></datalist></td><td>Description</td>
+</tr>
+<tr><td>type</td><td> css=#input-logo-id<datalist><option>id=input-logo-id</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Agenda Bot Template ⏰'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start with template'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/preceding::input[1]</option><option>//input[@id='input-logo-id']</option><option>//md-dialog[@id='dialogContent_41']/form/div/div/md-input-container[5]/div/input</option><option>//div/input</option><option>css=#input-logo-id</option><option> css=#input-logo-id</option></datalist></td><td>C:\test.png</td>
+</tr>
+<tr><td>waitForVisible</td><td>//span[contains(text(),'Create Bot')]<datalist><option>//button[contains(text(),'Create Bot')]</option><option>//span[contains(text(),'Create Bot')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'Create Bot')]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(no larger than 800 KB)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upload a custom icon'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Agenda Bot Template ⏰'])[2]/preceding::button[2]</option><option>xpath=(//button[@type='button'])[30]</option><option>//md-dialog[@id='dialogContent_41']/form/md-dialog-actions/button</option><option>//md-dialog-actions/button</option><option>css=button.md-button.md-primary.md-raised.md-gradiant-color.md-button.md-ink-ripple</option><option>//button[contains(text(),'Create Bot')]</option><option>//span[contains(text(),'Create Bot')]</option></datalist></td><td>Create Bot</td>
+</tr>
+<tr><td>waitForTextPresent</td><td>${name}<datalist><option>${name}</option><option>Test bot number 1</option><option>Z1_Test bot</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>${name}<datalist><option>${name}</option><option>Test bot number 1</option><option>Z1_Test bot</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Interactions<datalist><option>Interactions</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Plugins<datalist><option>Plugins</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//span[text()='My Bots']<datalist><option>//span[text()='My Bots']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='My Bots']<datalist><option>//span[text()='My Bots']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='dashboard'])[1]/following::a[1]</option><option>//section[@id='bot-menu-user-area']/nav/ul/li[2]/a</option><option>//a[contains(@href, '/bots')]</option><option>//li[2]/a</option><option>My Bots</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>${name}<datalist><option>Test bot number 1</option><option>Z1_Test bot </option><option>${name}</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>${name}<datalist><option>Test bot number 1</option><option>Z1_Test bot </option><option>${name}</option></datalist></td><td></td>
+</tr>
+<tr><td>goBackAndWait</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">03_Create_interactions</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interactions'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>//div[2]/button/md-icon</option><option>css=md-icon.material-icons.add-int-.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Choose Interaction type')])<datalist><option>xpath=(//span[contains(text(),'Choose Interaction type')])</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Bot Statement')])<datalist><option>xpath=(//span[contains(text(),'Bot Statement')])</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=nameModuleInput<datalist><option>id=nameModuleInput</option><option>name=editModuleName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::input[1]</option><option>//input[@id='nameModuleInput']</option><option>//div[@id='addModule']/div[2]/div/input</option><option>//div/input</option><option>css=#nameModuleInput</option></datalist></td><td>Statement</td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Bot Statement')])/following::span[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Bot Statement'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='keyboard_arrow_up'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email Extraction'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='URL Extraction'])[1]/preceding::span[3]</option><option>//div[@id='menu_container_21']/md-menu-content/md-menu-item/button/div/div[2]/span[2]</option><option>//div[2]/span[2]</option><option>css=span.b-type__desc.b-desc.custom-menu-help.ng-binding</option><option>xpath=(//span[contains(text(),'Bot Statement')])/following::span[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=responsesInput<datalist><option>id=responsesInput</option><option>name=botmessage602399</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Bot', "'", 's message')])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('The bot', "'", 's reply upon reaching this interaction.')])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Text To Speech'])[1]/preceding::textarea[1]</option><option>//textarea[@id='responsesInput']</option><option>//textarea</option><option>css=#responsesInput</option></datalist></td><td>Bot statement message</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interactions'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>//div[2]/button/md-icon</option><option>css=md-icon.material-icons.add-int-.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Choose Interaction type')])<datalist><option>xpath=(//span[contains(text(),'Choose Interaction type')])</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Await Response')])<datalist><option>xpath=(//span[contains(text(),'Bot Statement')])</option><option>xpath=(//span[contains(text(),'Email Extraction')])</option><option>xpath=(//span[contains(text(),'Await Response')])</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=nameModuleInput<datalist><option>id=nameModuleInput</option><option>name=editModuleName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::input[1]</option><option>//input[@id='nameModuleInput']</option><option>//div[@id='addModule']/div[2]/div/input</option><option>//div/input</option><option>css=#nameModuleInput</option></datalist></td><td>Await Response</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[2]/following::md-icon[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::md-icon[2]</option><option>//div[@id='addModule']/div[2]/div/button/md-icon</option><option>//div[4]/div[2]/div/button/md-icon</option><option>css=button.button-mini.minHW.md-button.ng-scope.md-ink-ripple.md-focused &gt; md-icon.material-icons.mdIconSettButton.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=responsesInput<datalist><option>id=responsesInput</option><option>name=botmessage602399</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Bot', "'", 's message')])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('The bot', "'", 's reply upon reaching this interaction.')])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Text To Speech'])[1]/preceding::textarea[1]</option><option>//textarea[@id='responsesInput']</option><option>//textarea</option><option>css=#responsesInput</option></datalist></td><td>Await Response message</td>
+</tr>
+<tr><td>loadVars</td><td>interactions.csv<datalist><option>reporters.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>week.csv</option><option>interactions.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interactions'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>//div[2]/button/md-icon</option><option>css=md-icon.material-icons.add-int-.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'${type}')])<datalist><option>xpath=(//span[contains(text(),'Choose Interaction type')])</option><option>xpath=(//span[contains(text(),'${type})])</option><option>xpath=(//span[contains(text(),'${type}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=nameModuleInput<datalist><option>id=nameModuleInput</option><option>name=editModuleName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::input[1]</option><option>//input[@id='nameModuleInput']</option><option>//div[@id='addModule']/div[2]/div/input</option><option>//div/input</option><option>css=#nameModuleInput</option></datalist></td><td>${type}</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interaction name:'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[2]/following::md-icon[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::md-icon[2]</option><option>//div[@id='addModule']/div[2]/div/button/md-icon</option><option>//div[4]/div[2]/div/button/md-icon</option><option>css=button.button-mini.minHW.md-button.ng-scope.md-ink-ripple.md-focused &gt; md-icon.material-icons.mdIconSettButton.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Edit Interaction<datalist><option>Bot message</option><option>Edit Interaction</option></datalist></td><td></td>
+</tr>
+<tr><td>storeTextPresent</td><td>Your API address<datalist><option>Sign in with Google</option><option>id=loginbutton</option><option>link=Continue</option><option>Выберите аккаунт</option><option>Сменить аккаунт</option><option>Google</option><option>Sign in</option><option>Your API address</option></datalist></td><td>x</td>
+</tr>
+<tr><td>if</td><td>x<datalist><option>${type}=${type}</option><option>x</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>xpath=(//span[contains(text(),'Your API address')])/following::textarea<datalist><option>xpath=(//span[contains(text(),'Your API address')])/following::textarea</option><option>xpath=(//span[contains(text(),'Error Response')])/following::textarea</option></datalist></td><td>${type}</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=responsesInput<datalist><option>id=responsesInput</option><option>name=botmessage602399</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Bot', "'", 's message')])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('The bot', "'", 's reply upon reaching this interaction.')])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Text To Speech'])[1]/preceding::textarea[1]</option><option>//textarea[@id='responsesInput']</option><option>//textarea</option><option>css=#responsesInput</option></datalist></td><td>${type}</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>xpath=(//span[contains(text(),'Error Response')])/following::textarea<datalist><option>xpath=(//span[contains(text(),'Error Response')])/following::textarea</option></datalist></td><td>${type} error text</td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">04_Copy_interactions</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='more_vert'])[1]/preceding::md-icon[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[3]/preceding::md-icon[4]</option><option>//div[2]/button/md-icon</option><option>css=md-icon.material-icons.mdIconSettButton.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>*Statement<datalist><option>*Statement</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[3]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[3]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[5]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='drag_handle'])[3]/preceding::md-icon[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[6]/preceding::md-icon[4]</option><option>//div[3]/div[2]/div[2]/button/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>*Await Response<datalist><option>*Await Response</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[5]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[5]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[7]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='drag_handle'])[5]/preceding::md-icon[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[8]/preceding::md-icon[4]</option><option>//div[4]/div[2]/button/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>*Email Extraction<datalist><option>*Email Extraction</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='drag_handle'])[8]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='drag_handle'])[8]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[8]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[11]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[11]/preceding::input[1]</option><option>xpath=(//input[@type='text'])[9]</option><option>//div[8]/dnd-nodrag/input</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('', '"', 'Number Extraction', '"', '')])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('', '"', '*Email Extraction', '"', '')])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Interaction:'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[29]/preceding::md-icon[1]</option><option>//tip-cont/div/button/md-icon</option><option>css=tip-cont &gt; div.ng-scope &gt; button.md-icon-button.md-button.md-ink-ripple &gt; md-icon.material-icons.ng-scope</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('', '"', 'Number Extraction', '"', '')])[1]/following::md-icon[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyAttribute</td><td>//div[@class='star']/following-sibling::div@title<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='star'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::input[1]</option><option>//input[@type='text']</option><option>//dnd-nodrag/input</option><option>css=input.ng-not-empty.ng-touched</option><option>//div[@class='star']/following-sibling::div@title</option></datalist></td><td>Number Extraction</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">05_Create_plugins</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>xpath=(//label[contains(text(),'Plugins')])<datalist><option>xpath=(//span[contains(text(),'Bot Statement')])</option><option>xpath=(//label[contains(text(),'Plugins')])</option></datalist></td><td></td>
+</tr>
+<tr><td>loadVars</td><td>plugins.csv<datalist><option>interactions.csv</option><option>reporters.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>week.csv</option><option>plugins.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plugins'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Interactions'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add an interaction'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>//div[2]/button/md-icon</option><option>css=md-icon.material-icons.add-int-.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Choose Plugin')])<datalist><option>xpath=(//span[contains(text(),'Choose Interaction type')])</option><option>xpath=(//span[contains(text(),'Choose Plugin')])</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'${type}')])<datalist><option>xpath=(//span[contains(text(),'Bot Statement')])</option><option>xpath=(//span[contains(text(),'${type}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Edit Plugin<datalist><option>Your API address</option><option>Sign in with Google</option><option>id=loginbutton</option><option>link=Continue</option><option>Выберите аккаунт</option><option>Сменить аккаунт</option><option>Google</option><option>Sign in</option><option>Edit Plugin</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>Make Plugin as start interaction<datalist><option>Make Plugin as start interaction</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Plugin:'])[1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Plugin:'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='help'])[2]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='step 1'])[1]/preceding::md-icon[2]</option><option>//md-toolbar/div/button/md-icon</option><option>css=div.md-toolbar-tools &gt; button.md-icon-button.md-button.md-ink-ripple &gt; md-icon.material-icons.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyAttribute</td><td>//div[@class='star']/following-sibling::div@class<datalist><option>//div[@class='star']/following-sibling::div@title</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='star'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='link'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[3]/preceding::input[1]</option><option>//input[@type='text']</option><option>//dnd-nodrag/input</option><option>css=input.ng-not-empty.ng-touched</option><option>//div[@class='star']/following-sibling::div@class</option></datalist></td><td>plugin__img ng-scope</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">06_Copy&Delete_Bot</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/bots<datalist><option>https://snatchbot.me/bots</option><option>https://snatchbot.me/</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>ZetBot<datalist><option>ZetBot</option></datalist></td><td>name</td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>${name}<datalist><option>${name}</option><option>Test bot number 1</option><option>Z1_Test bot</option><option>Shvec</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//md-card<datalist><option>//md-card</option></datalist></td><td>x</td>
+</tr>
+<tr><td>echo</td><td># Copy created bot<datalist><option># Copy created bot</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='assessment'])[${x}]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='assessment'])[19]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[18]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delete_forever'])[18]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='add'])[1]/preceding::md-icon[2]</option><option>//md-card[18]/md-card-actions/div/button/md-icon</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='assessment'])[${x}]/following::md-icon[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>${name}_<datalist><option>${name}</option><option>Z1_Test bot</option><option>${name}_</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td># Delete copied bot<datalist><option># Delete copied bot</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-card[${x}]/md-card-actions/button/md-icon<datalist><option>//md-card[${x}-1]/md-card-actions/button/md-icon</option><option>//md-card[${x}]/md-card-actions/button/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//*[contains(@class,'popup__fullwidth md-input-has-placeholder')]/child::input<datalist><option>//*[contains(@class,'popup__fullwidth md-input-has-placeholder')]/child::input</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='content_copy'])[15]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='assessment'])[16]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='add'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create Bot'])[1]/preceding::md-icon[2]</option><option>//md-card[15]/md-card-actions/button/md-icon</option><option>css=button.button-mini.md-button.md-ink-ripple.md-focused &gt; md-icon.material-icons.ng-scope</option><option>//*[contains(@class,'popup__input ng-pristine ng-valid md-input ng-empty ng-touched')]</option></datalist></td><td>DELETE</td>
+</tr>
+<tr><td>click</td><td>//span[text()='Delete']<datalist><option>//span[text()='Delete']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='DELETE'])[1]/following::button[2]</option><option>xpath=(//button[@type='button'])[34]</option><option>//button[2]</option><option>css=button.md-primary.md-raised.popup__control-radius.md-button.md-ink-ripple.md-focused</option><option>//button[text()='Delete']</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>refreshAndWait</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextNotPresent</td><td>${name}_<datalist><option>${name}</option><option>Z1_Test bot</option><option>${name}_</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">07_Bot_reports</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/bots<datalist><option>https://snatchbot.me/bots</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//md-card<datalist><option>//md-card</option></datalist></td><td>x</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}-1]/following::md-icon[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[12]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Simple'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='content_copy'])[12]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delete_forever'])[12]/preceding::md-icon[2]</option><option>//md-card[12]/md-card-actions/div/a[2]/md-icon</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}-1]/following::md-icon[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Empty set data<datalist><option>Empty set data</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td># "Empty set data" is visible<datalist><option># "Empty set data" is visible</option></datalist></td><td></td>
+</tr>
+<tr><td>assertVisible</td><td>//md-table-container/child::div[2]<datalist><option>//md-table-container/child::div[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[@class='md-select-icon'])[4]<datalist><option>xpath=(//span[@class='md-select-icon'])[4]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='All bots'])[1]/following::div[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='All bots'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='keyboard_arrow_up'])[1]/following::div[8]</option><option>//md-option[@id='select_option_1093']/div</option><option>//div[6]/md-select-menu/md-content/md-option[2]/div</option><option>css=#select_option_1093 &gt; div.md-text.ng-binding</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Display Report'])[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Display Report'])[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Display Report'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Do not include archived messages'])[1]/following::button[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Export as Json'])[1]/preceding::button[1]</option><option>xpath=(//button[@type='button'])[3]</option><option>//button[2]</option><option>css=button.md-gradiant-color.md-raised.md-button.md-ink-ripple</option></datalist></td><td></td>
+</tr>
+<tr><td>assertNotVisible</td><td>//md-table-container/child::div[2]<datalist><option>//md-table-container/child::div[2]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">08_Bot_Settings</td></tr>
+</thead>
+<tbody>
+<tr><td>echo</td><td># Go to settings<datalist><option># Go to settings</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://snatchbot.me/bots<datalist><option>https://snatchbot.me/bots</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>ZetBot<datalist><option>ZetBot</option></datalist></td><td>name</td>
+</tr>
+<tr><td>storeXpathCount</td><td>//md-card<datalist><option>//md-card</option></datalist></td><td>x</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}-1]/following::p[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}-1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}-1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[12]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Simple'])[1]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='content_copy'])[12]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delete_forever'])[12]/preceding::md-icon[2]</option><option>//md-card[12]/md-card-actions/div/a[2]/md-icon</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='id:'])[${x}]/following::md-icon[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>${name}<datalist><option>${name}</option><option>Test bot number 1</option><option>Z1_Test bot</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>${name}<datalist><option>${name}</option><option>Test bot number 1</option><option>Z1_Test bot</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Interactions<datalist><option>Interactions</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>Plugins<datalist><option>Plugins</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">09_Delete_interactions</td></tr>
+</thead>
+<tbody>
+<tr><td>echo</td><td>[Comment] Interactions deleting<datalist><option>[Comment] Plugins deleting</option><option>[Comment] Interactions deleting</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//label[contains(text(),'Interactions')])<datalist><option>xpath=(//label[contains(text(),'Plugins')])</option><option>xpath=(//span[contains(text(),'Bot Statement')])</option><option>xpath=(//label[contains(text(),'Interactions')])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])</option></datalist></td><td>interactions_count</td>
+</tr>
+<tr><td>storeEval</td><td>${interactions_count}<datalist><option>${plugins_count}</option><option>${interactions_count}</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&gt;1<datalist><option>i&gt;1</option><option>i&gt;2</option><option>i&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[1]/following::md-icon[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[2]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[4]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::md-icon[1]</option><option>//div[3]/div/div[2]/button[2]/md-icon</option><option>css=div.module.no-animate.ng-scope &gt; div.buttons.hidden-xs &gt; button.button-mini.minHW.hovered.md-button.md-ink-ripple &gt; md-icon.material-icons.mdIconSettButton.ng-scope</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[1]/following::md-icon[3]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::button[2]</option><option>xpath=(//button[@type='button'])[32]</option><option>//md-dialog-actions/button[2]</option><option>css=button.md-primary.md-confirm-button.md-button.md-ink-ripple.md-topmodal-theme.md-focused</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}-1<datalist><option>${i}-1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">10_Delete_plugins</td></tr>
+</thead>
+<tbody>
+<tr><td>echo</td><td>[Comment] Plugins deleting<datalist><option>[Comment] Plugins deleting</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//label[contains(text(),'Plugins')])<datalist><option>xpath=(//label[contains(text(),'Plugins')])</option><option>xpath=(//span[contains(text(),'Bot Statement')])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@class='plugin__img ng-scope']<datalist><option>xpath=//div[@class='plugin__img ng-scope']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])</option></datalist></td><td>plugins_count</td>
+</tr>
+<tr><td>storeEval</td><td>${plugins_count}<datalist><option>${plugins_count}</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&gt;1<datalist><option>i&gt;1</option><option>i&gt;2</option><option>i&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[2]/following::md-icon[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='There are no connections or fallback'])[2]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[4]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ZetBot'])[3]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='autorenew'])[1]/preceding::md-icon[1]</option><option>//div[3]/div/div[2]/button[2]/md-icon</option><option>css=div.module.no-animate.ng-scope &gt; div.buttons.hidden-xs &gt; button.button-mini.minHW.hovered.md-button.md-ink-ripple &gt; md-icon.material-icons.mdIconSettButton.ng-scope</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ok'])</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::button[2]</option><option>xpath=(//button[@type='button'])[32]</option><option>//md-dialog-actions/button[2]</option><option>css=button.md-primary.md-confirm-button.md-button.md-ink-ripple.md-topmodal-theme.md-focused</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}-1<datalist><option>${i}-1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Delete_ceated_bot</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://snatchbot.me/bots<datalist><option>https://snatchbot.me/</option><option>https://snatchbot.me/bots</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>ZetBot<datalist><option>ZetBot</option></datalist></td><td>name</td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>${name}<datalist><option>Test bot number 1</option><option>Z1_Test bot </option><option>Shvec</option><option>${name}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//md-card<datalist><option>//md-card</option></datalist></td><td>x</td>
+</tr>
+<tr><td>click</td><td>//md-card[${x}-1]/md-card-actions/button/md-icon<datalist><option>//md-card[${x}]/md-card-actions/button/md-icon</option><option>//md-card[${x}-1]/md-card-actions/button/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//*[contains(@class,'popup__fullwidth md-input-has-placeholder')]/child::input<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='content_copy'])[15]/following::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='assessment'])[16]/following::md-icon[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='add'])[1]/preceding::md-icon[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Create Bot'])[1]/preceding::md-icon[2]</option><option>//md-card[15]/md-card-actions/button/md-icon</option><option>css=button.button-mini.md-button.md-ink-ripple.md-focused &gt; md-icon.material-icons.ng-scope</option><option>//*[contains(@class,'popup__input ng-pristine ng-valid md-input ng-empty ng-touched')]</option><option>//*[contains(@class,'popup__fullwidth md-input-has-placeholder')]/child::input</option></datalist></td><td>DELETE</td>
+</tr>
+<tr><td>click</td><td>//span[text()='Delete']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='DELETE'])[1]/following::button[2]</option><option>xpath=(//button[@type='button'])[34]</option><option>//button[2]</option><option>css=button.md-primary.md-raised.popup__control-radius.md-button.md-ink-ripple.md-focused</option><option>//button[text()='Delete']</option><option>//span[text()='Delete']</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>refreshAndWait</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//md-icon[text()='add']<datalist><option>//md-icon[text()='add']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextNotPresent</td><td>${name}<datalist><option>Z1_Test bot </option><option>${name}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add_connection</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//label[contains(text(),'Connections &amp; NLP')]<datalist><option>//label[contains(text(),'Connections &amp; NLP')]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']<datalist><option>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']<datalist><option>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-input-container/md-select<datalist><option>id=select_273</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='close'])[2]/following::md-select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='warning'])[2]/following::md-select[1]</option><option>//md-select[@id='select_273']</option><option>//md-input-container/md-select</option><option>css=#select_273</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'Standard')]<datalist><option>//span[contains(text(),'Standard')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-input-container/md-select<datalist><option>//md-input-container/md-select</option><option>id=select_273</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='close'])[2]/following::md-select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='warning'])[2]/following::md-select[1]</option><option>//md-select[@id='select_273']</option><option>css=#select_273</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'Response to this interaction')]<datalist><option>//div[contains(text(),'Response to this interaction')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]<datalist><option>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'contains (whole word)')]<datalist><option>//div[contains(text(),'contains (whole word)')]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//label[contains(text(),'Keywords')]/following::input<datalist><option>//label[contains(text(),'Keywords')]/following::input</option></datalist></td><td>test</td>
+</tr>
+<tr><td>click</td><td>//*[@id="addTags"]/md-icon<datalist><option>//*[@id="addTags"]/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='No']<datalist><option>//span[text()='No']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]<datalist><option>//md-input-container[contains(@class,'b-auth__contol ng-scope')]</option><option>//md-select[contains(@class,'ng-pristine ng-valid ng-empty ng-touched')]</option><option>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'Number Extraction')]<datalist><option>//div[contains(text(),'contains (whole word)')]</option><option>//div[contains(text(),'Number Extraction')]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Copy_add</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//label[contains(text(),'Connections &amp; NLP')]<datalist><option>//label[contains(text(),'Connections &amp; NLP')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']<datalist><option>//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-input-container/md-select<datalist><option>//md-input-container/md-select</option><option>id=select_273</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='close'])[2]/following::md-select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='warning'])[2]/following::md-select[1]</option><option>//md-select[@id='select_273']</option><option>css=#select_273</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'Standard')]<datalist><option>//span[contains(text(),'Standard')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-input-container/md-select<datalist><option>//md-input-container/md-select</option><option>id=select_273</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='close'])[2]/following::md-select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='warning'])[2]/following::md-select[1]</option><option>//md-select[@id='select_273']</option><option>css=#select_273</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'Response to this interaction')]<datalist><option>//div[contains(text(),'Response to this interaction')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]<datalist><option>xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'contains (whole word)')]<datalist><option>//div[contains(text(),'contains (whole word)')]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//label[contains(text(),'Keywords')]/following::input<datalist><option>//label[contains(text(),'Keywords')]/following::input</option></datalist></td><td>test</td>
+</tr>
+<tr><td>click</td><td>//*[@id="addTags"]/md-icon<datalist><option>//*[@id="addTags"]/md-icon</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='No']<datalist><option>//span[text()='No']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//md-select[contains(@class,'ng-pristine ng-valid ng-empty ng-touched')]<datalist><option>//md-select[contains(@class,'ng-pristine ng-valid ng-empty ng-touched')]</option><option>//md-input-container[contains(@class,'b-auth__contol ng-scope')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[contains(text(),'Number Extraction')]<datalist><option>//div[contains(text(),'Number Extraction')]</option><option>//div[contains(text(),'contains (whole word)')]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

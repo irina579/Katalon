@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>JIRA_ACTIONS</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Deleting</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>issues.csv<datalist><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>issues.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>'https://issues.belitsoft.com/browse/'${link}</option><option>https://issues.belitsoft.com/browse/${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=opsbar-operations_more<datalist><option>id=opsbar-operations_more</option><option>link=More</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Agile Board'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Comment'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reopen Issue'])[1]/preceding::a[1]</option><option>//a[@id='opsbar-operations_more']</option><option>//div[@id='opsbar-opsbar-operations']/a[2]</option><option>xpath=(//a[contains(@href, '#')])[7]</option><option>//div/div/div/div[2]/a[2]</option><option>css=#opsbar-operations_more</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Delete All Attachments')])<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clone and move this issue'])[1]/following::span[2]</option><option>//aui-item-link[@id='ru-andreymarkelov-delete-all-attachments-page']/a/span</option><option>//aui-section[6]/div/aui-item-link[2]/a/span</option><option>css=#ru-andreymarkelov-delete-all-attachments-page &gt; a &gt; span.trigger-label</option><option>xpath=(//span[contains(text(),'Delete All Attachments')])</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=add<datalist><option>name=add</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete All Attachments'])[3]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete All Attachments'])[2]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/preceding::input[1]</option><option>//input[@name='add']</option><option>//div[@id='ru-andreymarkelov-delete-all-attachments-page-dialog']/div[2]/form/div[4]/div/input</option><option>//div[4]/div/input</option><option>css=input[name="add"]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Assign_type</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>issues_convert.csv<datalist><option>issues.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>issues_convert.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>'https://issues.belitsoft.com/browse/'${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='More']<datalist><option>//span[text()='More']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assign'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Comment'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start Progress'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Resolve Issue'])[1]/preceding::span[2]</option><option>//a[@id='opsbar-operations_more']/span</option><option>//div[3]/a[2]/span</option><option>css=span.dropdown-text</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[text()='Convert to Issue']<datalist><option>//span[text()='Convert to Issue']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Watchers'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Watch issue'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Move'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Link'])[2]/preceding::span[2]</option><option>//aui-item-link[@id='subtask-to-issue']/a/span</option><option>//aui-section[6]/div/aui-item-link/a/span</option><option>css=#subtask-to-issue &gt; a &gt; span.trigger-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=next_submit<datalist><option>id=next_submit</option><option>name=Next &gt;&gt;</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='New Issue Type:'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sub-task'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::input[1]</option><option>//input[@id='next_submit']</option><option>//div[@id='stepped-process']/div/section/form/table/tbody/tr[7]/td/div/div/input</option><option>//div/input</option><option>css=#next_submit</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=next_submit<datalist><option>id=next_submit</option><option>name=Next &gt;&gt;</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Measurement of complexity and/or size of a requirement.'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Story Points:'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::input[1]</option><option>//input[@id='next_submit']</option><option>//div[@id='stepped-process']/div/section/form/table/tbody/tr[7]/td[2]/div/div/input</option><option>//div/input</option><option>css=#next_submit</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=finish_submit<datalist><option>id=finish_submit</option><option>name=Finish</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Story Points'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Bug'])[2]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::input[1]</option><option>//input[@id='finish_submit']</option><option>//div[@id='stepped-process']/div/section/form/table/tbody/tr[7]/td/div/div/input</option><option>//div/input</option><option>css=#finish_submit</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Replace_label_to_component</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td>USER_AREA<datalist><option>SITE</option><option>USER_AREA</option></datalist></td><td>component</td>
+</tr>
+<tr><td>loadVars</td><td>issues.csv<datalist><option>issues_convert.csv</option><option>issues.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>https://issues.belitsoft.com/browse/${link}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>'https://issues.belitsoft.com/browse/'${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//strong[contains(text(), 'Component/s:')]/following::span[2]<datalist><option>//strong[contains(text(), 'Component/s:')]/following::span[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//strong[contains(text(), 'Component/s:')]/following::span[2]<datalist><option>//strong[contains(text(), 'Component/s:')]/following::span[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//*[@id="components-textarea"]<datalist><option>//*[@id="components-textarea"]</option><option>id=components-val</option></datalist></td><td>${component}</td>
+</tr>
+<tr><td>click</td><td>link=${component}<datalist><option>link=SITE</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Atlassian'])[1]/following::a[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Report a problem'])[1]/following::a[5]</option><option>//a[contains(text(),'SITE')]</option><option>//li[@id='site-1']/a</option><option>xpath=(//a[contains(@href, '#')])[114]</option><option>//div[10]/div/div/ul/li/a</option><option>css=#site-1 &gt; a.aui-list-item-link</option><option>link=${component}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[contains(@class,'aui-button submit')]<datalist><option>//button[contains(@class,'aui-button submit')]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

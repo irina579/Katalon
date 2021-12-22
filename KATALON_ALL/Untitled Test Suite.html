@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Untitled Test Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bot_login</td></tr>
+</thead>
+<tbody>
+<tr>
+    <td>open</td>
+    <td>https://snatchbot.me/
+        <datalist>
+            <option>https://snatchbot.me/</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>link=Login
+        <datalist>
+            <option>link=Login</option>
+            <option>//a[contains(text(),'Login')]</option>
+            <option>//body[@id='page-top']/nav/div[3]/a[2]</option>
+            <option>//a[contains(@href, '/login')]</option>
+            <option>//a[2]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=email
+        <datalist>
+            <option>id=email</option>
+            <option>name=email</option>
+            <option>//input[@id='email']</option>
+            <option>//input</option>
+            <option>css=#email</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=password
+        <datalist>
+            <option>id=password</option>
+            <option>name=password</option>
+            <option>//input[@id='password']</option>
+            <option>//md-input-container[2]/input</option>
+            <option>css=#password</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//md-checkbox/div
+        <datalist>
+            <option>//md-checkbox/div</option>
+            <option>css=div.md-container.md-ink-ripple</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=Login
+        <datalist>
+            <option>name=Login</option>
+            <option>//button[@name='Login']</option>
+            <option>//button</option>
+            <option>css=button[name="Login"]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bot_create</td></tr>
+</thead>
+<tbody>
+<tr>
+    <td>open</td>
+    <td>https://snatchbot.me/
+        <datalist>
+            <option>https://snatchbot.me/</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//li[2]/a/span
+        <datalist>
+            <option>//li[2]/a/span</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>pause</td>
+    <td>5000
+        <datalist>
+            <option>5000</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>storeXpathCount</td>
+    <td> /html/body/div[1]/div/section/div[2]/div/md-card
+        <datalist>
+            <option> /html/body/div[1]/div/section/div[2]/div/md-card</option>
+        </datalist>
+    </td>
+    <td>KOL</td>
+</tr>
+<tr>
+    <td>storeEval</td>
+    <td>1
+        <datalist>
+            <option>1</option>
+        </datalist>
+    </td>
+    <td>i</td>
+</tr>
+<tr>
+    <td>echo</td>
+    <td>${i}
+        <datalist>
+            <option>${i}</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>echo</td>
+    <td>${KOL}
+        <datalist>
+            <option>KOL</option>
+            <option>${KOL}</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button
+        <datalist>
+            <option>/html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button</option>
+            <option>//html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>pause</td>
+    <td>3000
+        <datalist>
+            <option>3000</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=botName
+        <datalist>
+            <option>name=botName</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=botName
+        <datalist>
+            <option>id=input_441</option>
+            <option>name=botName</option>
+            <option>//input[@id='input_441']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container/input</option>
+            <option>//input</option>
+            <option>css=#input_441</option>
+        </datalist>
+    </td>
+    <td>zx1</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=botDescription
+        <datalist>
+            <option>id=input_442</option>
+            <option>name=botDescription</option>
+            <option>//textarea[@id='input_442']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container[2]/div/textarea</option>
+            <option>//textarea</option>
+            <option>css=#input_442</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=botDescription
+        <datalist>
+            <option>id=input_442</option>
+            <option>name=botDescription</option>
+            <option>//textarea[@id='input_442']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container[2]/div/textarea</option>
+            <option>//textarea</option>
+            <option>css=#input_442</option>
+        </datalist>
+    </td>
+    <td>describe1</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//html/body/div[5]/md-dialog/form/md-dialog-actions/button[1]
+        <datalist>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-checkbox/div[2]</option>
+            <option>//md-checkbox/div[2]</option>
+            <option>css=div.md-label</option>
+            <option>//html/body/div[5]/md-dialog/form/md-dialog-actions/button[1]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

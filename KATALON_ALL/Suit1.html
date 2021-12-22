@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Suit1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bot_login</td></tr>
+</thead>
+<tbody><tr>
+    <td>open</td>
+    <td>https://snatchbot.me/
+        <datalist>
+            <option>https://snatchbot.me/</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>link=Login
+        <datalist>
+            <option>link=Login</option>
+            <option>//a[contains(text(),'Login')]</option>
+            <option>//body[@id='page-top']/nav/div[3]/a[2]</option>
+            <option>//a[contains(@href, '/login')]</option>
+            <option>//a[2]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=email
+        <datalist>
+            <option>id=email</option>
+            <option>name=email</option>
+            <option>//input[@id='email']</option>
+            <option>//input</option>
+            <option>css=#email</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=password
+        <datalist>
+            <option>id=password</option>
+            <option>name=password</option>
+            <option>//input[@id='password']</option>
+            <option>//md-input-container[2]/input</option>
+            <option>css=#password</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//md-checkbox/div
+        <datalist>
+            <option>//md-checkbox/div</option>
+            <option>css=div.md-container.md-ink-ripple</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=Login
+        <datalist>
+            <option>name=Login</option>
+            <option>//button[@name='Login']</option>
+            <option>//button</option>
+            <option>css=button[name="Login"]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Bot_create</td></tr>
+</thead>
+<tbody><tr>
+    <td>open</td>
+    <td>https://snatchbot.me/
+        <datalist>
+            <option>https://snatchbot.me/</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//li[2]/a/span
+        <datalist>
+            <option>//li[2]/a/span</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>pause</td>
+    <td>1000
+        <datalist>
+            <option>5000</option>
+            <option>1000</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>storeXpathCount</td>
+    <td> /html/body/div[1]/div/section/div[2]/div/md-card
+        <datalist>
+            <option> /html/body/div[1]/div/section/div[2]/div/md-card</option>
+        </datalist>
+    </td>
+    <td>KOL</td>
+</tr>
+<tr>
+    <td>storeEval</td>
+    <td>1
+        <datalist>
+            <option>1</option>
+        </datalist>
+    </td>
+    <td>i</td>
+</tr>
+<tr>
+    <td>echo</td>
+    <td>${i}
+        <datalist>
+            <option>${i}</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>echo</td>
+    <td>${KOL}
+        <datalist>
+            <option>KOL</option>
+            <option>${KOL}</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button
+        <datalist>
+            <option>/html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button</option>
+            <option>//html/body/div[1]/div/section/div[2]/div/md-card[${KOL}]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>pause</td>
+    <td>3000
+        <datalist>
+            <option>3000</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=botName
+        <datalist>
+            <option>name=botName</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=botName
+        <datalist>
+            <option>id=input_441</option>
+            <option>name=botName</option>
+            <option>//input[@id='input_441']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container/input</option>
+            <option>//input</option>
+            <option>css=#input_441</option>
+        </datalist>
+    </td>
+    <td>Z_BOT_${KOL}</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=botDescription
+        <datalist>
+            <option>id=input_442</option>
+            <option>name=botDescription</option>
+            <option>//textarea[@id='input_442']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container[2]/div/textarea</option>
+            <option>//textarea</option>
+            <option>css=#input_442</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=botDescription
+        <datalist>
+            <option>id=input_442</option>
+            <option>name=botDescription</option>
+            <option>//textarea[@id='input_442']</option>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-input-container[2]/div/textarea</option>
+            <option>//textarea</option>
+            <option>css=#input_442</option>
+        </datalist>
+    </td>
+    <td>describe1</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//html/body/div[5]/md-dialog/form/md-dialog-actions/button[1]
+        <datalist>
+            <option>//md-dialog[@id='dialogContent_445']/form/div/div/md-checkbox/div[2]</option>
+            <option>//md-checkbox/div[2]</option>
+            <option>css=div.md-label</option>
+            <option>//html/body/div[5]/md-dialog/form/md-dialog-actions/button[1]</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add_interactions</td></tr>
+</thead>
+<tbody><tr>
+    <td>refresh</td>
+    <td>
+        <datalist>
+            <option></option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[3]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[3]</option>
+            <option>//div[3]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[14]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[14]</option>
+            <option>//div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//html/body/div[5]/md-menu-content/md-menu-item[1]/button
+        <datalist>
+            <option>xpath=(//button[@type='button'])[15]</option>
+            <option>//div[@id='menu_container_157']/md-menu-content/md-menu-item/button</option>
+            <option>//md-menu-content/md-menu-item/button</option>
+        <option>//html/body/div[5]/md-menu-content/md-menu-item[1]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Start</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[3]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[3]</option>
+            <option>//div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95544</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95544</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Start (statement)</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[19]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[19]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[30]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[30]</option>
+            <option>//div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[34]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[34]</option>
+            <option>//div[@id='menu_container_187']/md-menu-content/md-menu-item[2]/button</option>
+            <option>//div[5]/md-menu-content/md-menu-item[2]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Email</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[19]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[19]</option>
+            <option>//div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95545</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95545</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Email</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not mail</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[27]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[27]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[38]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[38]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[43]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[43]</option>
+            <option>//div[@id='menu_container_199']/md-menu-content/md-menu-item[3]/button</option>
+            <option>//div[5]/md-menu-content/md-menu-item[3]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>URL</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[27]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[27]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95546</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95546</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>URL</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>NOT URL</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[35]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[35]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[46]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[46]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[52]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[52]</option>
+            <option>//div[@id='menu_container_212']/md-menu-content/md-menu-item[4]/button</option>
+            <option>//div[5]/md-menu-content/md-menu-item[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Phone</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[35]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[35]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95547</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95547</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Phone</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not Phone</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[43]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[43]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[54]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[54]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[61]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[61]</option>
+            <option>//div[@id='menu_container_227']/md-menu-content/md-menu-item[5]/button</option>
+            <option>//md-menu-item[5]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Date</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[43]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[43]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95548</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95548</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Date</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not date</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[51]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[51]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[62]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[62]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[70]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[70]</option>
+            <option>//div[@id='menu_container_240']/md-menu-content/md-menu-item[6]/button</option>
+            <option>//md-menu-item[6]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Number</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[51]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[51]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>//div[3]/div/section/div
+        <datalist>
+            <option>//div[3]/div/section/div</option>
+            <option>css=div.load-module.ng-scope</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95549</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95549</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Number</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not number</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[59]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[59]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[70]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[70]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[79]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[79]</option>
+            <option>//div[@id='menu_container_253']/md-menu-content/md-menu-item[7]/button</option>
+            <option>//md-menu-item[7]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Address</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[59]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[59]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95550</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95550</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Address</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not address</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[67]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[67]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[78]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[78]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[88]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[88]</option>
+            <option>//div[@id='menu_container_266']/md-menu-content/md-menu-item[8]/button</option>
+            <option>//md-menu-item[8]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Duration</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[67]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[67]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95551</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95551</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Duration</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Not duration</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[75]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[75]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[86]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[86]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[97]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[97]</option>
+            <option>//div[@id='menu_container_281']/md-menu-content/md-menu-item[9]/button</option>
+            <option>//md-menu-item[9]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Translate</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[75]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[75]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95552</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95552</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Translate</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>xpath=(//textarea[@id='responsesInput'])[2]
+        <datalist>
+            <option>xpath=(//textarea[@id='responsesInput'])[2]</option>
+            <option>//div[2]/textarea</option>
+            <option>css=div.b-elastic__textarea.ng-scope &gt; #responsesInput</option>
+        </datalist>
+    </td>
+    <td>Incorrect translate</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[83]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[83]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[94]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[94]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[106]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[106]</option>
+            <option>//div[@id='menu_container_294']/md-menu-content/md-menu-item[10]/button</option>
+            <option>//md-menu-item[10]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>Awaite</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[83]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[83]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95553</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=responsesInput
+        <datalist>
+            <option>id=responsesInput</option>
+            <option>name=botmessage95553</option>
+            <option>//textarea[@id='responsesInput']</option>
+            <option>//textarea</option>
+            <option>css=#responsesInput</option>
+        </datalist>
+    </td>
+    <td>Awaite</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[91]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[91]</option>
+            <option>//div[4]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[102]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[102]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[112]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[112]</option>
+            <option>//div[@id='menu_container_305']/md-menu-content/md-menu-item[11]/button</option>
+            <option>//md-menu-item[11]/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nameModuleInput
+        <datalist>
+            <option>id=nameModuleInput</option>
+            <option>name=editModuleName</option>
+            <option>//input[@id='nameModuleInput']</option>
+            <option>//div/input</option>
+            <option>css=#nameModuleInput</option>
+        </datalist>
+    </td>
+    <td>JSON</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>xpath=(//button[@type='button'])[91]
+        <datalist>
+            <option>xpath=(//button[@type='button'])[91]</option>
+            <option>//div[4]/div[2]/div/button</option>
+        </datalist>
+    </td>
+    <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

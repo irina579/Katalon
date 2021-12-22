@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>JIRA</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Assign_to</td></tr>
+</thead>
+<tbody>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>num_issues</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=${num_issues}<datalist><option>${i}&lt;=30</option><option>${i}&lt;=200</option><option>${i}&lt;=10</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option><option>${i}&lt;=${num_issues}</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[@class='issue-link']<datalist><option>//a[@class='issue-link']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[@id='assignee-val']/span[2]<datalist><option>//span[@id='assignee-val']/span[2]</option><option>//dd/span/span[2]</option><option>css=#assignee-val &gt; span.overlay-icon.aui-icon.aui-icon-small.aui-iconfont-edit</option><option>//span[@id='assignee-val']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=assignee-field<datalist><option>id=assignee-field</option><option>//input[@id='assignee-field']</option><option>//div[@id='assignee-single-select']/input</option><option>//span/form/div/div/div/input</option><option>css=#assignee-field</option></datalist></td><td>Ala Chamekh</td>
+</tr>
+<tr><td>click</td><td>//div[@id='assignee-single-select']/span<datalist><option>//div[@id='assignee-single-select']/span</option><option>//span/form/div/div/div/span</option><option>css=span.icon.aui-ss-icon.noloading.drop-menu</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Ala Chamekh - chamekhala@gmail.com (chamekh_a)<datalist><option>link=Ala Chamekh - chamekhala@gmail.com (chamekh_a)</option><option>//a[contains(text(),'Ala Chamekh - chamekhala@gmail.com (chamekh_a)')]</option><option>//li[@id='ala-chamekh-9']/a</option><option>xpath=(//a[contains(@href, '#')])[119]</option><option>//ul[2]/li[3]/a</option><option>css=#ala-chamekh-9 &gt; a.aui-list-item-link.aui-iconised-link</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option><option>5000</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//span[@class='aui-icon aui-icon-small aui-iconfont-success']<datalist><option>//span[@class='aui-icon aui-icon-small aui-iconfont-success']</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>5000<datalist><option>5000</option><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>goBack</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>refreshAndWait</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>data.csv<datalist><option>data.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html	<datalist><option>https://katalon-test.s3.amazonaws.com/demo-aut/dist/html/form.html	</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=first-name<datalist><option>id=first-name</option></datalist></td><td>${first}</td>
+</tr>
+<tr><td>type</td><td>id=last-name<datalist><option>id=last-name</option></datalist></td><td>${last}</td>
+</tr>
+<tr><td>endLoadVars	</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeCsv</td><td>data.csv,1,last<datalist><option>data.csv,1,last</option></datalist></td><td>last</td>
+</tr>
+<tr><td>echo</td><td>${last}<datalist><option>${last}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Report_Avi_snatchApp</td></tr>
+</thead>
+<tbody>
+<tr><td>runScript</td><td>return prompt ('Input start date', '2018-07-29')<datalist><option>return prompt ('Input link of exam', 1)</option><option>return prompt ('Input link of report', 1)</option><option>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>return prompt ('Input start date', 2018-07-08)</option><option>return prompt ('Input start date', '2018-07-08')</option><option>return prompt ('Input start date', '2018-07-15')</option><option>return prompt ('Input start date', '2018-07-29')</option></datalist></td><td>start</td>
+</tr>
+<tr><td>runScript</td><td>return prompt ('Input start date', '2018-08-04')<datalist><option>return prompt ('Input link of exam', 1)</option><option>return prompt ('Input link of report', 1)</option><option>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>return prompt ('Input start date', 2018-07-08)</option><option>return prompt ('Input start date', '2018-07-08')</option><option>return prompt ('Input start date', '2018-07-21')</option><option>return prompt ('Input start date', '2018-08-04')</option></datalist></td><td>end</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>created_link</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>created_andr</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>created_ios</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20WEB%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20WEB%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>created_web</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20WINDOWS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20IOS%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20WINDOWS%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>created_win</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>closed_link</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>reopened_link</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>closed_andr</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20IOS%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20IOS%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>closed_ios</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20WEB%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20WEB%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>closed_web</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20WIN%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Closed%20AND%20labels%20%3D%20WIN%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>closed_win</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option></datalist></td><td>reopened_andr</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20IOS%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20IOS%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>reopened_ios</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20WEB%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20WEB%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>reopened_web</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20WIN%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'<datalist><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20ANDROID%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20'</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20labels%20%3D%20ANDROID%20AND%20created%20%3E%3D%${start}%20AND%20created%20%3C%3D%${end}'</option><option>'https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20status%20%3D%20Reopened%20AND%20labels%20%3D%20WIN%20AND%20updated%20%3E%3D%20${start}%20AND%20updated%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC'</option></datalist></td><td>reopened_win</td>
+</tr>
+<tr><td>storeEval</td><td>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20%22New%20Feature%22)%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)'<datalist><option>https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20%22New%20Feature%22)%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)</option><option>'https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20%22New%20Feature%22)%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Reopened)'</option></datalist></td><td>unresolved</td>
+</tr>
+<tr><td>open</td><td>${created_link}<datalist><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${created_link}</option><option>${cr_all_begin}${cr_finish_part}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>all</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>all</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${created_andr}<datalist><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${created_andr}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${created_ios}<datalist><option>${created_web}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${created_ios}</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${created_web}<datalist><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${created_web}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>web</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>web</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${created_win}<datalist><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${created_win}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>win</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>win</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>Created- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${created_link}<datalist><option>Created  - ${cr_all} (${created_link})</option><option>Created- ${cr_all} (${created_link})</option><option>Created- ${cr_all} (Android- ${cr_andr}; IOS - ${cr_ios}; WEB - ${cr_web};WIN - ${cr_win}) Link - ${created_link}</option><option>Created- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${created_link}</option></datalist></td><td>all_created</td>
+</tr>
+<tr><td>open</td><td>${closed_link}<datalist><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${closed_link}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>all</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>all</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${closed_andr}<datalist><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${closed_andr}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${closed_ios}<datalist><option>${created_ios}</option><option>${created_web}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${closed_ios}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${closed_web}<datalist><option>${created_web}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${closed_web}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>web</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>web</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${closed_win}<datalist><option>${created_win}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${closed_win}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>win</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>win</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>Closed- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${closed_link}<datalist><option>Created - ${cr_all} (${created_link})</option><option>Created- ${cr_all} (${created_link})</option><option>Created- ${cr_all} (Android- ${cr_andr}; IOS - ${cr_ios}; WEB - ${cr_web};WIN - ${cr_win}) Link - ${created_link}</option><option>Closed- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${closed_link}</option></datalist></td><td>all_closed</td>
+</tr>
+<tr><td>open</td><td>${reopened_link}<datalist><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${reopened_link}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>all</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>all</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${reopened_andr}<datalist><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${reopened_andr}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>andr</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${reopened_ios}<datalist><option>${created_ios}</option><option>${created_web}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${reopened_ios}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>ios</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${reopened_web}<datalist><option>${created_web}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${reopened_web}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>web</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>web</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${reopened_win}<datalist><option>${created_win}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${reopened_win}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>win</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>win</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>Reopened- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${reopened_link}<datalist><option>Created - ${cr_all} (${created_link})</option><option>Created- ${cr_all} (${created_link})</option><option>Created- ${cr_all} (Android- ${cr_andr}; IOS - ${cr_ios}; WEB - ${cr_web};WIN - ${cr_win}) Link - ${created_link}</option><option>Reopened- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${reopened_link}</option></datalist></td><td>all_reopened</td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${unresolved}<datalist><option>${reopened_win}</option><option>${created_win}</option><option>${created_andr}</option><option>${created_link}</option><option>https://104.130.172.210/index.php/2016-04-06-22-24-45/quizzes?task=quizzes&amp;id=3</option><option>https://104.130.27.122/component/joomla_lms/quizzes?task=quizzes&amp;id=3&amp;Itemid=1055</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%202018-07-14%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>https://issues.belitsoft.com/issues/?filter=-2&amp;jql=project%20%3D%20SNAPP%20AND%20created%20%3E%3D%20${start}%20AND%20created%20%3C%3D%20${end}%20ORDER%20BY%20updated%20DESC%2C%20created%20DESC</option><option>created_link</option><option>${cr_all_begin}${cr_finish_part}</option><option>${unresolved}</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option></datalist></td><td>line</td>
+</tr>
+<tr><td>if</td><td>line&gt;0<datalist><option>line&gt;0</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[@class='results-count-total results-count-link']<datalist><option>//span[@class='results-count-total results-count-link']</option><option>//table[@id='jq_quiz_container_tbl'] /tbody/tr/td[1]/span[2]</option><option>//span[@class=’results-count-end’]/span</option><option>//div[@class]//label[@class='results-count-end']</option><option>//span[contains(@class,’results-count-end')]</option></datalist></td><td>unres</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>0<datalist><option>0</option></datalist></td><td>unres</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>Unresolved - ${unres}  Link - ${unresolved}<datalist><option>Reopened- ${all} (Android- ${andr}; IOS - ${ios}; WEB - ${web};WIN - ${win}) Link - ${reopened_link}</option><option>Created - ${cr_all} (${created_link})</option><option>Created- ${cr_all} (${created_link})</option><option>Created- ${cr_all} (Android- ${cr_andr}; IOS - ${cr_ios}; WEB - ${cr_web};WIN - ${cr_win}) Link - ${created_link}</option><option>Unresolved - ${unres}  Link - ${unresolved}</option></datalist></td><td>all_unresolved</td>
+</tr>
+<tr><td>echo</td><td>${all_created}<datalist><option>${all}${versions}</option><option>${all}</option><option>${all_created}</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${all_closed}<datalist><option>${all}${versions}</option><option>${all}</option><option>${all_closed}</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${all_reopened}<datalist><option>${all}${versions}</option><option>${all}</option><option>${all_reopened}</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${all_created}|${all_closed}|${all_reopened}|${all_unresolved}<datalist><option>${all_reopened}</option><option>${all}${versions}</option><option>${all}</option><option>${all_created}"   "${all_closed}"   "${all_reopened}</option><option>${all_created}|${all_closed}|${all_reopened}</option><option>${all_created}|${all_closed}|${all_reopened}|${all_unresolved}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SnatchBot</td></tr>
+</thead>
+<tbody>
+</tbody></table>
+</body>
+</html>

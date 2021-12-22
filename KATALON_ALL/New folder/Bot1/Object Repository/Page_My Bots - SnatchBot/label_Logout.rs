@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Logout</name>
+   <tag></tag>
+   <elementGuidId>57c01744-c840-49fc-b964-592495fcff81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@translate='navigate.logout']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-tns-c0-0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>translate</name>
+      <type>Main</type>
+      <value>navigate.logout</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Logout</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[@class=&quot;ng-tns-c0-0&quot;]/div[@class=&quot;wrapper lang--en&quot;]/div[@class=&quot;sidebar ng-tns-c0-0 ng-star-inserted sidebar--active&quot;]/div[@class=&quot;sidebar-scroll&quot;]/ng-scrollbar[@class=&quot;ng-tns-c0-0&quot;]/div[@class=&quot;ng-scrollbar-layout ng-scrollbar-x-layout&quot;]/div[@class=&quot;ng-scrollbar-layout ng-scrollbar-y-layout&quot;]/div[@class=&quot;ng-scroll-view-container&quot;]/div[@class=&quot;ng-scroll-view&quot;]/div[@class=&quot;sidebar__body ng-tns-c0-0&quot;]/ul[@class=&quot;sidebar__menu sidebar__menu--bottom&quot;]/li[@class=&quot;ng-tns-c0-0&quot;]/a[@class=&quot;ng-tns-c0-0&quot;]/label[@class=&quot;ng-tns-c0-0&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//label[@translate='navigate.logout']</value>
+   </webElementXpaths>
+</WebElementEntity>

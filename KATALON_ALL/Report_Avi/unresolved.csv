@@ -1,0 +1,8 @@
+title;link
+snapp_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+sna_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNA%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+if_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20"IF"%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+snapp_ios_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20IOS%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+snapp_android_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20ANDROID%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+snapp_web_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20WEB%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+snapp_win_unresolved;https://issues.belitsoft.com/issues/?jql=project%20%3D%20SNAPP%20AND%20issuetype%20in%20(Bug%2C%20Improvement%2C%20Sub-task)%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20WINDOWS%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC

@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>PMP</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LOGIN</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://staging.project-management-prepcast.com/<datalist><option>https://staging.project-management-prepcast.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='mod_improved_ajax_login-339']/a/span<datalist><option>//div[@id='mod_improved_ajax_login-339']/a/span</option><option>//span</option><option>css=span.loginBtn.leftBtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=userTxt<datalist><option>id=userTxt</option><option>//input[@id='userTxt']</option><option>//div[8]/div/form/div[2]/input</option><option>css=#userTxt</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=userTxt<datalist><option>id=userTxt</option><option>//input[@id='userTxt']</option><option>//div[8]/div/form/div[2]/input</option><option>css=#userTxt</option></datalist></td><td>test2_2016@mail.ru</td>
+</tr>
+<tr><td>click</td><td>id=passTxt<datalist><option>id=passTxt</option><option>//input[@id='passTxt']</option><option>//div[8]/div/form/div[3]/input</option><option>css=#passTxt</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passTxt<datalist><option>id=passTxt</option><option>//input[@id='passTxt']</option><option>//div[8]/div/form/div[3]/input</option><option>css=#passTxt</option></datalist></td><td>123456</td>
+</tr>
+<tr><td>click</td><td>id=submitBtn<datalist><option>id=submitBtn</option><option>//button[@id='submitBtn']</option><option>//div[4]/button</option><option>css=#submitBtn</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">OPEN_ExamPMP</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://staging.project-management-prepcast.com/welcome<datalist><option>https://staging.project-management-prepcast.com/welcome</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]<datalist><option>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]</option><option>//div[@id='wk-gridbc4']/div/div/div/div/table/tbody/tr[3]/td/a</option><option>xpath=(//a[contains(@href, '/pmpsimulator')])[2]</option><option>//tr[3]/td/a</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>5000<datalist><option>3000</option><option>5000</option><option>50000</option><option>10000</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[1]<datalist><option>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]</option><option>//div[@id='wk-gridbc4']/div/div/div/div/table/tbody/tr[3]/td/a</option><option>xpath=(//a[contains(@href, '/pmpsimulator')])[2]</option><option>//tr[3]/td/a</option><option>xpath=(//a[contains(text(),'PMP Exam 1')])[2]</option><option>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[1]</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option><option>name=jquizwindow</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=close-window<datalist><option>id=close-window</option><option>link=Close Window</option><option>//a[contains(text(),'Close Window')]</option><option>//a[@id='close-window']</option><option>//div[@id='quiz-toolbar-bottom-left']/a</option><option>//a[contains(@href, 'javascript:window.self.onbeforeunload = null;this.close();')]</option><option>//a</option><option>css=#close-window</option></datalist></td><td></td>
+</tr>
+<tr><td>close</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Cont_openQ</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://staging.project-management-prepcast.com/welcome<datalist><option>https://staging.project-management-prepcast.com/welcome</option></datalist></td><td></td>
+</tr>
+<tr><td>runScript</td><td>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)<datalist><option>prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option></datalist></td><td>exam_type</td>
+</tr>
+<tr><td>echo</td><td>${exam_type}<datalist><option>${x}</option><option>${exam_type}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]<datalist><option>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]</option><option>//div[@id='wk-gridbc4']/div/div/div/div/table/tbody/tr[3]/td/a</option><option>xpath=(//a[contains(@href, '/pmpsimulator')])[2]</option><option>//tr[3]/td/a</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>5000<datalist><option>5000</option><option>3000</option><option>50000</option><option>10000</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[1]<datalist><option>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[1]</option><option>xpath=(//a[contains(text(),'PMP Exam Simulator')])[2]</option><option>//div[@id='wk-gridbc4']/div/div/div/div/table/tbody/tr[3]/td/a</option><option>xpath=(//a[contains(@href, '/pmpsimulator')])[2]</option><option>//tr[3]/td/a</option><option>xpath=(//a[contains(text(),'PMP Exam 1')])[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>link=Continue<datalist><option>link=Continue</option></datalist></td><td>x</td>
+</tr>
+<tr><td>echo</td><td>${x}<datalist><option>${x}</option></datalist></td><td></td>
+</tr>
+<tr><td>if</td><td>x<datalist><option>Continue==True</option><option>x</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Continue<datalist><option>link=Continue</option><option>//div[@id='jq_quiz_task_container']/div/div[2]/a</option><option>//a[contains(@href, "javascript:jq_ResumeQuizOn(718092,'bf35e099aa2e8d7c19b8a2ad3da412db', -1);")]</option><option>//div[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=tl_start<datalist><option>id=tl_start</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Cont_quiz</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>storeEval</td>
+	<td>4000<datalist><option>4000</option></datalist></td>
+	<td>delay</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)<datalist><option>prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option><option>return prompt ('Select the type of Exam: 1 - PMP; 2 - PMI-ACP; 3 - CAMP', 1)</option></datalist></td>
+	<td>exam_type</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>return prompt ('Select the mode you want to finish Exam: 1 - from Grid filtered mode; 2 - from Exam mode!', 1)<datalist><option>prompt ('Select the mode you want to finish Exam: 1 - from Grid filtered mode; 2 - from Exam mode!', 1)</option><option>return prompt ('Select the mode you want to finish Exam: 1 - from Grid filtered mode; 2 - from Exam mode!', 1)</option></datalist></td>
+	<td>finish_mode</td>
+</tr>
+<tr><td>if</td><td>${exam_type}==1<datalist><option>${exam_type}==1</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>PMP Exam Simulator<datalist><option>if (storedVars['exam_type']==2){exam_link='PMI-ACP Exam Simulator...'}else if(storedVars['exam_type']==3){exam_link='CAPM Exam Simulator...'}else{exam_link='PMP Exam Simulator...'}</option><option>PMP Exam Simulator</option></datalist></td>
+	<td>exam_link</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>CAPM Exam Simulator...<datalist><option>CAPM Exam Simulator...</option></datalist></td><td>exam_link</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>Online Courses - Project Management Professional<datalist><option>if (storedVars['exam_type']==2){exam_title='Online Courses - PMI Agile Certified Practitioner'}else if(storedVars['exam_type']==3){exam_title='Online Courses - Certified Associate in Project Management'}else{exam_title='Online Courses - Project Management Professional'}</option><option>Online Courses - Project Management Professional</option></datalist></td>
+	<td>exam_title</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${exam_link}<datalist><option>${exam_link}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>http://staging.project-management-prepcast.com/<datalist><option>http://staging.project-management-prepcast.com/</option></datalist></td>
+	<td>mainPage</td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>https://staging.project-management-prepcast.com/welcome<datalist><option>https://staging.project-management-prepcast.com/welcome</option></datalist></td>
+	<td>myDashboardPage</td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>https://staging.project-management-prepcast.com/login<datalist><option>https://staging.project-management-prepcast.com/login</option></datalist></td>
+	<td>loginPage</td>
+</tr>
+<tr>
+	<td>storeExpression</td>
+	<td>Welcome<datalist><option>Welcome</option></datalist></td>
+	<td>customerLoginPage</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${loginPage}<datalist><option>https://staging.project-management-prepcast.com${loginPage}</option><option>${loginPage}</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>link=PMP Exam Simulator...<datalist><option>link=Continue</option><option>link=PMP Exam Simulator...</option></datalist></td><td>onsite</td>
+</tr>
+<tr><td>if</td><td>onsite<datalist><option>x</option><option>Continue==True</option><option>onsite</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>openPageDashboard<datalist><option>nextMove</option><option>openPageDashboard</option></datalist></td><td>nextMove</td>
+</tr>
+<tr><td>else</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>loginOnTheSite<datalist><option>nextMove</option><option>loginOnTheSite</option></datalist></td><td>nextMove</td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>gotoLabel</td><td>${nextMove}<datalist><option>${nextMove}</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>openPageDashboard<datalist><option>openPageDashboard</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://staging.project-management-prepcast.com${myDashboardPage}<datalist><option>https://staging.project-management-prepcast.com${myDashboardPage}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>${customerLoginPage}<datalist><option>${customerLoginPage}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>testingClosed0<datalist><option>testingClosed0</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>loginOnTheSite<datalist><option>loginOnTheSite</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://staging.project-management-prepcast.com${loginPage}<datalist><option>https://staging.project-management-prepcast.com${loginPage}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userTxt<datalist><option>id=userTxt</option></datalist></td>
+	<td>test2_2016@mail.ru</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passTxt<datalist><option>id=passTxt</option></datalist></td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submitBtn<datalist><option>id=submitBtn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>testingClosed0<datalist><option>testingClosed0</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>testingClosed0<datalist><option>testingClosed0</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=${exam_link}<datalist><option>link=${exam_link}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[2]<datalist><option>xpath=(//a[contains(text(),'Timed &amp; Learning Quizzes')])[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>jquizwindow<datalist><option>jquizwindow</option></datalist></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=jquizwindow<datalist><option>name=jquizwindow</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>if (selenium.isElementPresent('link=Continue') == true) {nextMove = 'Continue_quiz'} else&amp;nbsp;&amp;nbsp;{nextMove = 'Start_quiz'}<datalist><option>if (selenium.isElementPresent('link=Continue') == true) {nextMove = 'Continue_quiz'} else&amp;nbsp;&amp;nbsp;{nextMove = 'Start_quiz'}</option></datalist></td>
+	<td>nextMove</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${nextMove}<datalist><option>${nextMove}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>${nextMove}<datalist><option>${nextMove}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>Continue_quiz<datalist><option>Continue_quiz</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Continue<datalist><option>link=Continue</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>testingClosed<datalist><option>testingClosed</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>Start_quiz<datalist><option>Start_quiz</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=tl_start<datalist><option>id=tl_start</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>${exam_title}<datalist><option>${exam_title}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 1 of 10<datalist><option>Question 1 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 2 of 10<datalist><option>Question 2 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 3 of 10<datalist><option>Question 3 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 4 of 10<datalist><option>Question 4 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='mark_link']<datalist><option>//a[@id='mark_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mark_link<datalist><option>id=mark_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 5 of 10<datalist><option>Question 5 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='mark_link']<datalist><option>//a[@id='mark_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mark_link<datalist><option>id=mark_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 6 of 10<datalist><option>Question 6 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='mark_link']<datalist><option>//a[@id='mark_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mark_link<datalist><option>id=mark_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 7 of 10<datalist><option>Question 7 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Prev<datalist><option>link=Prev</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Prev<datalist><option>link=Prev</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='mark_link']<datalist><option>//a[@id='mark_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mark_link<datalist><option>id=mark_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 6 of 10<datalist><option>Question 6 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 7 of 10<datalist><option>Question 7 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[1]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 8 of 10<datalist><option>Question 8 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[2]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 9 of 10<datalist><option>Question 9 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[3]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Prev<datalist><option>link=Prev</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 10 of 10<datalist><option>Question 10 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label<datalist><option>//div[@id='quest_div']/div[2]/form/table/tbody/tr[4]/td/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=time_is_up_ok<datalist><option>id=time_is_up_ok</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='show_grid_link']<datalist><option>//a[@id='show_grid_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=show_grid_link<datalist><option>id=show_grid_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Displaying 10 questions<datalist><option>Displaying 10 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[2]/label<datalist><option>//div[@id='filter']/fieldset/p[2]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 8 questions<datalist><option>Filtered Mode: Displaying 8 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 1<datalist><option>link=Q : 1</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 2<datalist><option>link=Q : 2</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 3<datalist><option>link=Q : 3</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 4<datalist><option>link=Q : 4</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 7<datalist><option>link=Q : 7</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 8<datalist><option>link=Q : 8</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 9<datalist><option>link=Q : 9</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 10<datalist><option>link=Q : 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[1]/label<datalist><option>//div[@id='filter']/fieldset/p[1]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Displaying 10 questions<datalist><option>Displaying 10 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>1<datalist><option>1</option></datalist></td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars['i'] &lt;= 10<datalist><option>storedVars['i'] &lt;= 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${i}<datalist><option>${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>link=Q : ${i}<datalist><option>link=Q : ${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : ${i}<datalist><option>link=Q : ${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td> ${i}+1<datalist><option> ${i}+1</option></datalist></td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td><datalist><option></option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[3]/label<datalist><option>//div[@id='filter']/fieldset/p[3]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 2 questions<datalist><option>Filtered Mode: Displaying 2 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 5<datalist><option>link=Q : 5</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 6<datalist><option>link=Q : 6</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[1]/label<datalist><option>//div[@id='filter']/fieldset/p[1]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Displaying 10 questions<datalist><option>Displaying 10 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[4]/label<datalist><option>//div[@id='filter']/fieldset/p[4]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 2 questions<datalist><option>Filtered Mode: Displaying 2 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 4<datalist><option>link=Q : 4</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 5<datalist><option>link=Q : 5</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[3]/label<datalist><option>//div[@id='filter']/fieldset/p[3]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 3 questions<datalist><option>Filtered Mode: Displaying 3 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 4<datalist><option>link=Q : 4</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 5<datalist><option>link=Q : 5</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 6<datalist><option>link=Q : 6</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[3]/label<datalist><option>//div[@id='filter']/fieldset/p[3]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[2]/label<datalist><option>//div[@id='filter']/fieldset/p[2]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 9 questions<datalist><option>Filtered Mode: Displaying 9 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 1<datalist><option>link=Q : 1</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 2<datalist><option>link=Q : 2</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 3<datalist><option>link=Q : 3</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 4<datalist><option>link=Q : 4</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 5<datalist><option>link=Q : 5</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 7<datalist><option>link=Q : 7</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 8<datalist><option>link=Q : 8</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 9<datalist><option>link=Q : 9</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : 10<datalist><option>link=Q : 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[4]/label<datalist><option>//div[@id='filter']/fieldset/p[4]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[3]/label<datalist><option>//div[@id='filter']/fieldset/p[3]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 10 questions<datalist><option>Filtered Mode: Displaying 10 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>1<datalist><option>1</option></datalist></td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars['i'] &lt;= 10<datalist><option>storedVars['i'] &lt;= 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${i}<datalist><option>${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>link=Q : ${i}<datalist><option>link=Q : ${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Q : ${i}<datalist><option>link=Q : ${i}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td> ${i}+1<datalist><option> ${i}+1</option></datalist></td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td><datalist><option></option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='filter']/fieldset/p[2]/label<datalist><option>//div[@id='filter']/fieldset/p[2]/label</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Q : 5<datalist><option>link=Q : 5</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 2 questions<datalist><option>Filtered Mode: Displaying 2 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 5 of 10<datalist><option>Question 5 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Next<datalist><option>link=Next</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 2 questions<datalist><option>Filtered Mode: Displaying 2 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Question 6 of 10<datalist><option>Question 6 of 10</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//a[@id='show_grid_link']<datalist><option>//a[@id='show_grid_link']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=show_grid_link<datalist><option>id=show_grid_link</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Filtered Mode: Displaying 2 questions<datalist><option>Filtered Mode: Displaying 2 questions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['finish_mode'] == 1<datalist><option>storedVars['finish_mode'] == 1</option></datalist></td>
+	<td>testingClosed</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Go Back<datalist><option>link=Go Back</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoLabel</td>
+	<td>testingClosed<datalist><option>testingClosed</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>testingClosed<datalist><option>testingClosed</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=end-exam<datalist><option>id=end-exam</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>${delay}<datalist><option>${delay}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=end_exam_button<datalist><option>id=end_exam_button</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

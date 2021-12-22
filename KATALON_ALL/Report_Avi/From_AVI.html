@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>From_AVI</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Optimized_report</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>reporters.csv<datalist><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>week.csv</option><option>reporters.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${link}<datalist><option>${link}</option><option>${link_current}</option><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//*[@id="reporter-val"]/child::span<datalist><option>//*[@id="reporter-val"]/child::span</option></datalist></td><td>reporter</td>
+</tr>
+<tr><td>store</td><td>${reporter}<datalist><option>${reporter}</option></datalist></td><td>${title}</td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Sportstation_10_18</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Rdif_Add</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=30<datalist><option>${i}&lt;=200</option><option>${i}&lt;=10</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option><option>${i}&lt;=30</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/div/input</option><option>//div[3]/div/div/div/input</option><option>css=div.m-b-1.m-r-1.pr-flex-stretchy.pr-picker &gt; input.form-control</option></datalist></td><td>999re_bgjhbc_nkndcksa${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Add']<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Add']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='Save']<datalist><option>//button[text()='Save']</option><option>//button[@type='submit']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div[2]/div/button</option><option>//form/div/div[2]/div/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RunListAdd</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>10<datalist><option>1</option><option>20</option><option>7</option><option>11</option><option>5</option><option>6</option><option>10</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=100<datalist><option>${i}&lt;=100</option><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>link=Create Run List<datalist><option>link=Create Run List</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Create Run List<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option><option>link=Create Run List</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option></datalist></td><td>List_${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create']<datalist><option>//button[text()='Create and add next']</option><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Create']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//button[text()='Add Runner']<datalist><option>//button[text()='Add Runner']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='Add Runner']<datalist><option>//button[text()='Create']</option><option>//button[text()='Create and add next']</option><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Add Runner']</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//button[@title='Add All']<datalist><option>//button[@title='Add All']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@title='Add All']<datalist><option>//button[@title='Add All']</option></datalist></td><td>Add All</td>
+</tr>
+<tr><td>clickAndWait</td><td>//a[@class='fa fa-arrow-left text-warning pr-back-button']<datalist><option>//a[@class='fa fa-arrow-left text-warning pr-back-button']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RunnersAdd</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=Create Runner<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>20</option><option>1</option><option>7</option><option>11</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=100<datalist><option>${i}&lt;=100</option><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option></datalist></td><td>Empty_${i}</td>
+</tr>
+<tr><td>type</td><td>xpath=(//input[@value=''])<datalist><option>xpath=(//input[@value=''])</option><option>xpath=(//input[@value='1'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div[2]/div/input</option><option>//div[2]/div/input</option></datalist></td><td>Pepty_${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create and add next']<datalist><option>//button[text()='Create and add next']</option><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Untitled Test Case</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://www.yopmail.com/en/<datalist><option>http://www.yopmail.com/en/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='alt.cm-1aj748o'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fill in the CAPTCHA below to complete your action'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Check&amp;nbsp;for&amp;nbsp;new&amp;nbsp;mails']/parent::*</option><option>//a[@id='lrefr']/span/span</option><option>//span/span</option><option>css=span.slientext</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 17devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 17devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>18_improve</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='alt.cm-1aj748o'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fill in the CAPTCHA below to complete your action'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Check&amp;nbsp;for&amp;nbsp;new&amp;nbsp;mails']/parent::*</option><option>//a[@id='lrefr']/span/span</option><option>//span/span</option><option>css=span.slientext</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::td[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::td[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::td[8]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::td[2]</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td</option><option>//tr[3]/td</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 18devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>19_improve</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='what is email alias?'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='alt.bp-bovx0v9t'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fill in the CAPTCHA below to complete your action'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Check&amp;nbsp;for&amp;nbsp;new&amp;nbsp;mails']/parent::*</option><option>//a[@id='lrefr']/span/span</option><option>//span/span</option><option>css=span.slientext</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hello, 19devuser'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='-- Show pictures. --'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='sportstation.fit'])[1]/preceding::span[4]</option><option>xpath=//*/text()[normalize-space(.)='You have requested registration on portal.']/parent::*</option><option>//div[@id='mailmillieu']/div[2]/div/div[3]/table/tbody/tr/td/div/table/tbody/tr[3]/td/div/p/span/span</option><option>//span/span</option><option>css=span &gt; span</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create_RUNNER</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=Create Runner<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option><option>7</option><option>11</option><option>20</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=100<datalist><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option><option>//input[@value='']</option></datalist></td><td>GOST_${i}</td>
+</tr>
+<tr><td>type</td><td>xpath=(//input[@value=''])<datalist><option>xpath=(//input[@value='1'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div[2]/div/input</option><option>//div[2]/div/input</option><option>xpath=(//input[@value=''])</option></datalist></td><td>HOST_${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select</option><option>//select</option><option>css=select.form-control</option></datalist></td><td>label=0${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select</option><option>//div[2]/select</option><option>css=div.col-md-4 &gt; select.form-control</option></datalist></td><td>label=May</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select</option><option>//div[3]/select</option></datalist></td><td>label=199${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create and add next']<datalist><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Create and add next']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create_and_add_RFIDS</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=Create Runner<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=2<datalist><option>${i}&lt;=2</option><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option></datalist></td><td>Ablabama${i}</td>
+</tr>
+<tr><td>type</td><td>xpath=(//input[@value=''])<datalist><option>xpath=(//input[@value=''])</option><option>xpath=(//input[@value='1'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div[2]/div/input</option><option>//div[2]/div/input</option></datalist></td><td>May_${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select</option><option>//select</option><option>css=select.form-control</option></datalist></td><td>label=0${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select</option><option>//div[2]/select</option><option>css=div.col-md-4 &gt; select.form-control</option></datalist></td><td>label=May</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select</option><option>//div[3]/select</option></datalist></td><td>label=199${i}</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>j</td>
+</tr>
+<tr><td>while</td><td>${j}&lt;=10<datalist><option>${i}&lt;=30</option><option>${i}&lt;=200</option><option>${i}&lt;=10</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option><option>${j}&lt;=10</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/div/input</option><option>//div[3]/div/div/div/input</option><option>css=div.m-b-1.m-r-1.pr-flex-stretchy.pr-picker &gt; input.form-control</option></datalist></td><td>Completely_new_${j}_${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Add']<datalist><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${j}+1<datalist><option>${i}+1</option><option>${j}+1</option></datalist></td><td>j</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create and add next']<datalist><option>//button[text()='Create and add next']</option><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">User_search_iframe</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Runners.csv<datalist><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>Runners.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>typeAndWait</td><td>//div[@class='pr-picker']//input [@class='form-control']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reset'])[1]/following::div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/following::div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Viola Großmann'])[1]/preceding::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Erik Siering'])[1]/preceding::div[12]</option><option>//div[@id='app-container']/div/div/div/div[2]/div[3]/div/div[3]</option><option>//div[3]/div/div[3]</option><option>css=div.event-ranking-list-item-header-runner-name</option><option>xpath=(.//*[normalize-space(text()) and normalize-sp:div[6]ace(.)='Reset'])[1]/following:</option><option>//div[@class='pr-picker']//input [@class='form-control']</option></datalist></td><td>${name}</td>
+</tr>
+<tr><td>pause</td><td>5000<datalist><option>1000</option><option>5000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>xpath=(//div[contains(text(),'${name}')])<datalist><option>xpath=(//div[contains(text(),'${name}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>assertNotXpathCount</td><td>//div[@class='event-ranking-list-item']<datalist><option>//div[@class='event-ranking-list-item']</option></datalist></td><td>0</td>
+</tr>
+<tr><td>assertElementPresent</td><td>xpath=(//div[contains(text(),'${name}')])<datalist><option>xpath=(//div[contains(text(),'Bro')])</option><option>xpath=(//div[contains(text(),${name})])</option><option>xpath=(//div[contains(text(),'${name}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@class='event-ranking-list-item-header-runner-name']<datalist><option>//div[@class='event-ranking-list-item-header-runner-name']</option></datalist></td><td>${name}</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Event_create</td></tr>
+</thead>
+<tbody>
+<tr><td>select</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mode'])[1]/following::select[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mode'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Client'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::select[1]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[2]/select</option><option>//select</option><option>css=select.form-control</option></datalist></td><td>label=event</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mode'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/preceding::input[1]</option><option>//input[@value='Test_1']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[3]/input</option><option>//div[3]/input</option><option>css=div.form-group.has-success &gt; input.form-control</option></datalist></td><td>Test_1</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::textarea[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/preceding::textarea[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Game'])[1]/preceding::textarea[1]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[4]/textarea</option><option>//textarea</option><option>css=textarea.form-control</option></datalist></td><td>Description_1</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description_1'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Game'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Activity'])[1]/preceding::input[1]</option><option>//input[@value='Contact_1']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[5]/input</option><option>//div[5]/input</option></datalist></td><td>Contact_1</td>
+</tr>
+<tr><td>select</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Game'])[1]/following::select[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Game'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Activity'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Surface'])[1]/preceding::select[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[6]/div/div/select</option><option>//div[6]/div/div/select</option><option>css=div.form-group.has-success &gt; select.form-control</option></datalist></td><td>label=paesen</td>
+</tr>
+<tr><td>select</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Activity'])[1]/following::select[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Activity'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Game'])[1]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Surface'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start Date'])[1]/preceding::select[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[6]/div[2]/div/select</option><option>//div[2]/div/select</option></datalist></td><td>label=Ball</td>
+</tr>
+<tr><td>select</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Surface'])[1]/following::select[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Surface'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Activity'])[1]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Start Date'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='End Date'])[1]/preceding::select[1]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div/div[6]/div[3]/div/select</option><option>//div[3]/div/select</option></datalist></td><td>label=Floor</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='GeoRadius, m'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='GeoRadius, m'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lng'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Time zone'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Map Data'])[1]/preceding::input[2]</option><option>//input[@value='20']</option><option>//div[@id='app-container']/div/div/div[3]/div/div/div/div/form/fieldset/div/div[2]/div/fieldset/div[3]/div/div/input</option><option>//div[3]/div/div/input</option><option>css=div.col-md-12 &gt; div.form-group.has-success &gt; input.form-control</option></datalist></td><td>20</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Address'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Address'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Load'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lat'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lng'])[1]/preceding::input[2]</option><option>//input[@value='Pereulok Kozlova 7, Minsk, Belarus']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/form/fieldset/div/div[2]/div/fieldset/div/div/div/div/input</option><option>//div/fieldset/div/div/div/div/input</option><option>css=div.autocomplete-root &gt; input.form-control</option></datalist></td><td>Pereulok Kozlova 7, Minsk, Belarus</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ConfirmRegistration</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://yopmail.com/en/<datalist><option>http://yopmail.com/en/</option><option>http://www.yopmail.com/en/</option><option>http://yopmail.com</option></datalist></td><td></td>
+</tr>
+<tr><td>loadVars</td><td>emails.csv<datalist><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>emails.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://yopmail.com/en/<datalist><option>http://yopmail.com/en/</option><option>http://www.yopmail.com/en/</option><option>http://yopmail.com</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=login<datalist><option>id=login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='YOPmail : Disposable and Free email address.'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[2]</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Type the Email name of your choice<datalist><option>Type the Email name of your choice</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[contains(@class,'sbut')]<datalist><option>//*[contains(@class,'sbut')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[1]</option><option>//input[@value='Check Inbox']</option><option>//form[@id='f']/table/tbody/tr/td[4]/input</option><option>//td[4]/input</option><option>css=input.sbut</option><option>id=lrefr</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//span[contains(text(),'You have requested registration on portal')]<datalist><option>//span[contains(text(),'You have requested registration on portal')]</option><option>//span[contains(text(),'"Please follow this secure link')]</option><option>xpath=(//span[contains(text(),'You have requested registration on portal.)])</option><option>//span[contains(text(),'You have requested registration on portal.)]</option><option>//div[contains(text(),'New Registration Confirmation')]</option></datalist></td><td>//href[contains(text(),'"Please follow this secure link')]</td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'You have requested registration on portal')]/a<datalist><option>//span[contains(text(),'You have requested registration on portal')]/a</option><option>//span[contains(text(),'newsletter@snatchbot.me')]</option><option>//span[contains(text(),'NoReply@snatchbot.me')]</option><option>//span[contains(text(),'You have requested registration on portal')]/following::link</option><option>//span[contains(text(),'You have requested registration on portal')]/following::a</option><option>//span[contains(text(),'You have requested registration on portal')]/following-sibling::a</option><option>//span[contains(text(),'You have requested registration on portal')]/sibling::a</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Confirm<datalist><option>Confirm</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>//button[contains(text(),'Confirm')]<datalist><option>//button[contains(text(),'Confirm')]</option></datalist></td><td>button</td>
+</tr>
+<tr><td>if</td><td>button<datalist><option>button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[contains(text(),'Confirm')]<datalist><option>//button[contains(text(),'Confirm')]</option><option>//*[contains(text(),'https://snatchbot.me/auth/check_email')]</option><option>link=exact:https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='To proceed, click here:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a sweet day! – Mr Avi. B, Founder of the Snatch Group Ltd.'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you don’t know why you got this email, please tell us straight away so we can fix this for you.'])[1]/preceding::a[1]</option><option>//a[contains(text(),'https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb')]</option><option>//div[@id='mailmillieu']/div[2]/div[3]/div/p[6]/span/a</option><option>//a[@href='http://url8273.snatchbot.me/wf/click?upn=1PSimR6UlQhy-2BxcwOqmDmHgicPm-2F3zez3LWM5uUqVnW-2BpZ54-2BxU2Nxdgbug-2F8q8rZ-2BH2s7WVAU8nbYYGLq-2FXjK0pEoCV0LzQRgHNFpzkvRmPgZ-2BxrkFzbeuubFf24Wmy_RyNLN6asrV2G60RaxeiB0KzXRA0gaLDcgE3cH6XUiSjP8qk94gqv2cL7-2FJiSw1BEanzeiv3NvtivLX1nGXAazO0fpgx2QT3f4R-2BoPbdpEBWG0AsO3bVlTNkzhgdswziFaCUDiyCPWThCaopgWdtKwIJOyxQCkaZzmohyVjoFITsR5daQktIMxH8V2DDF3QV1PrUSW2hRsaII9DY-2BmRZmWg-3D-3D']</option><option>//span/a</option><option>css=span &gt; a</option><option>//link[contains(text(),'https://snatchbot.me/auth/check_email')]</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>assertTextPresent</td><td>Confirm<datalist><option>You successfully confirmed the registration</option><option>Confirm</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SingleConfirmation</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://yopmail.com/en/<datalist><option>http://yopmail.com/en/</option><option>http://www.yopmail.com/en/</option><option>http://yopmail.com</option></datalist></td><td></td>
+</tr>
+<tr><td>storeExpression</td><td>13_improve@yopmail.com<datalist><option>13_improve@yopmail.com</option><option>3333@yopmail.com</option><option>auto_test3@yopmail.com</option><option>auto_test2@yopmail.com</option><option>11_improve@yopmail.com</option></datalist></td><td>email</td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='YOPmail : Disposable and Free email address.'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[2]</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>waitForTextPresent</td><td>Type the Email name of your choice<datalist><option>Type the Email name of your choice</option><option>Create smart chatbots</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//*[contains(@class,'sbut')]<datalist><option>//*[contains(@class,'sbut')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[1]</option><option>//input[@value='Check Inbox']</option><option>//form[@id='f']/table/tbody/tr/td[4]/input</option><option>//td[4]/input</option><option>css=input.sbut</option><option>id=lrefr</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>//span[contains(text(),'You have requested registration on portal')]<datalist><option>//span[contains(text(),'You have requested registration on portal')]</option><option>//span[contains(text(),'"Please follow this secure link')]</option><option>xpath=(//span[contains(text(),'You have requested registration on portal.)])</option><option>//span[contains(text(),'You have requested registration on portal.)]</option><option>//div[contains(text(),'New Registration Confirmation')]</option></datalist></td><td>//href[contains(text(),'"Please follow this secure link')]</td>
+</tr>
+<tr><td>click</td><td>//span[contains(text(),'You have requested registration on portal')]/a<datalist><option>//span[contains(text(),'You have requested registration on portal')]/a</option><option>//span[contains(text(),'newsletter@snatchbot.me')]</option><option>//span[contains(text(),'NoReply@snatchbot.me')]</option><option>//span[contains(text(),'You have requested registration on portal')]/following::link</option><option>//span[contains(text(),'You have requested registration on portal')]/following::a</option><option>//span[contains(text(),'You have requested registration on portal')]/following-sibling::a</option><option>//span[contains(text(),'You have requested registration on portal')]/sibling::a</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[contains(text(),'Confirm')]<datalist><option>//button[contains(text(),'Confirm')]</option><option>//*[contains(text(),'https://snatchbot.me/auth/check_email')]</option><option>link=exact:https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='To proceed, click here:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a sweet day! – Mr Avi. B, Founder of the Snatch Group Ltd.'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you don’t know why you got this email, please tell us straight away so we can fix this for you.'])[1]/preceding::a[1]</option><option>//a[contains(text(),'https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb')]</option><option>//div[@id='mailmillieu']/div[2]/div[3]/div/p[6]/span/a</option><option>//a[@href='http://url8273.snatchbot.me/wf/click?upn=1PSimR6UlQhy-2BxcwOqmDmHgicPm-2F3zez3LWM5uUqVnW-2BpZ54-2BxU2Nxdgbug-2F8q8rZ-2BH2s7WVAU8nbYYGLq-2FXjK0pEoCV0LzQRgHNFpzkvRmPgZ-2BxrkFzbeuubFf24Wmy_RyNLN6asrV2G60RaxeiB0KzXRA0gaLDcgE3cH6XUiSjP8qk94gqv2cL7-2FJiSw1BEanzeiv3NvtivLX1nGXAazO0fpgx2QT3f4R-2BoPbdpEBWG0AsO3bVlTNkzhgdswziFaCUDiyCPWThCaopgWdtKwIJOyxQCkaZzmohyVjoFITsR5daQktIMxH8V2DDF3QV1PrUSW2hRsaII9DY-2BmRZmWg-3D-3D']</option><option>//span/a</option><option>css=span &gt; a</option><option>//link[contains(text(),'https://snatchbot.me/auth/check_email')]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTextPresent</td><td>You successfully confirmed the registration<datalist><option>You successfully confirmed the registration</option></datalist></td><td></td>
+</tr>
+<tr><td>close</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SaveLinks</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://yopmail.com/en/<datalist><option>http://yopmail.com/en/</option><option>http://www.yopmail.com/en/</option><option>http://yopmail.com</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>""<datalist><option>""</option></datalist></td><td>LinkMassiv</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=login<datalist><option>id=login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='YOPmail : Disposable and Free email address.'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[2]</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>//*[contains(@class,'sbut')]<datalist><option>//*[contains(@class,'sbut')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[1]</option><option>//input[@value='Check Inbox']</option><option>//form[@id='f']/table/tbody/tr/td[4]/input</option><option>//td[4]/input</option><option>css=input.sbut</option><option>id=lrefr</option></datalist></td><td></td>
+</tr>
+<tr><td>loadVars</td><td>emails.csv<datalist><option>emails.csv</option><option>reporters.csv</option><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>id=login<datalist><option>id=login</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=login<datalist><option>id=login</option><option>name=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Type the Email name of your choice'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='YOPmail : Disposable and Free email address.'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='- My addresses -'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::input[2]</option><option>//input[@id='login']</option><option>//form[@id='f']/table/tbody/tr/td[2]/input[2]</option><option>//input[2]</option><option>css=#login</option></datalist></td><td>${email}</td>
+</tr>
+<tr><td>click</td><td>id=lrefr<datalist><option>id=lrefr</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=2<datalist><option>index=2</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>//span[contains(text(),'You have requested registration on portal')]<datalist><option>//span[contains(text(),'You have requested registration on portal')]</option><option>//span[contains(text(),'"Please follow this secure link')]</option><option>xpath=(//span[contains(text(),'You have requested registration on portal.)])</option><option>//span[contains(text(),'You have requested registration on portal.)]</option><option>//div[contains(text(),'New Registration Confirmation')]</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//span[contains(text(),'You have requested registration on portal')]/a<datalist><option>//span[contains(text(),'You have requested registration on portal')]/a</option></datalist></td><td>Link</td>
+</tr>
+<tr><td>store</td><td>${LinkMassiv}${Link},${email}TAB<datalist><option>${LinkMassiv}+${Link}</option><option>${LinkMassiv},${Link}</option><option>${LinkMassiv}${Link},${email}</option><option>${LinkMassiv}${Link},${email}TAB</option></datalist></td><td>LinkMassiv</td>
+</tr>
+<tr><td>selectFrame</td><td>relative=parent<datalist><option>relative=parent</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LinkConfirm</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Links.csv<datalist><option>Links.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>${link}<datalist><option>${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>refreshAndWait</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>//input[@value='${email}']<datalist><option>Confirm</option><option>${email}</option><option>//input[contains(text(),'16_improve@yopmail.com')]</option><option>//input[@value='${email}']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>//button[contains(text(),'Confirm')]<datalist><option>//button[contains(text(),'Confirm')]</option></datalist></td><td>button</td>
+</tr>
+<tr><td>if</td><td>button<datalist><option>button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[contains(text(),'Confirm')]<datalist><option>//button[contains(text(),'Confirm')]</option><option>//*[contains(text(),'https://snatchbot.me/auth/check_email')]</option><option>link=exact:https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='To proceed, click here:'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Have a sweet day! – Mr Avi. B, Founder of the Snatch Group Ltd.'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='If you don’t know why you got this email, please tell us straight away so we can fix this for you.'])[1]/preceding::a[1]</option><option>//a[contains(text(),'https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb')]</option><option>//div[@id='mailmillieu']/div[2]/div[3]/div/p[6]/span/a</option><option>//a[@href='http://url8273.snatchbot.me/wf/click?upn=1PSimR6UlQhy-2BxcwOqmDmHgicPm-2F3zez3LWM5uUqVnW-2BpZ54-2BxU2Nxdgbug-2F8q8rZ-2BH2s7WVAU8nbYYGLq-2FXjK0pEoCV0LzQRgHNFpzkvRmPgZ-2BxrkFzbeuubFf24Wmy_RyNLN6asrV2G60RaxeiB0KzXRA0gaLDcgE3cH6XUiSjP8qk94gqv2cL7-2FJiSw1BEanzeiv3NvtivLX1nGXAazO0fpgx2QT3f4R-2BoPbdpEBWG0AsO3bVlTNkzhgdswziFaCUDiyCPWThCaopgWdtKwIJOyxQCkaZzmohyVjoFITsR5daQktIMxH8V2DDF3QV1PrUSW2hRsaII9DY-2BmRZmWg-3D-3D']</option><option>//span/a</option><option>css=span &gt; a</option><option>//link[contains(text(),'https://snatchbot.me/auth/check_email')]</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>assertTextPresent</td><td>Confirm<datalist><option>Confirm</option><option>You successfully confirmed the registration</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

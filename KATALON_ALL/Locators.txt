@@ -1,0 +1,145 @@
+!!!
+//a[@class='attachment-title' and contains(text(), '.mp4')]
+//*[contains(text(), 'Log with me')]
+//span[@class='VButton__text' and contains(text(), 'Add')]
+
+item__info__department-name
+//data-ng-init[contains(text(), 'success('Your account has been confirmed')]
+
+//div[contains(text(), 'All_feature')]
+//div[contains(text(), 'Next')]
+
+md-text ng-binding
+//a/span[text()='Logout']
+
+//*[contains(@class,'o-control')]
+//b-datalist__item__status-unread[contains(text(), 'Component/s:')]
+
+//strong[contains(text(), 'Component/s:')]
+
+
+//button[contains(@class,'aui-button submit')]
+
+NOT!!!//md-table-container[contains(@class,'ng-scope'/Empty set data)]
+
+
+md-card-actions
+
+xpath=(//a[contains(text(),'Timed & Learning Quizzes')])[2]
+
+Сменить аккаунт
+//div[text()='Login']
+//div[@class='star']/following-sibling::div
+//span[@class='ng-binding']
+
+VerifyAttribute
+//div[@class='star']/following-sibling::div@title
+//div[@class='item__info__department-add-icon'][1]
+
+//div[@class='item__info__department-name'and contains(text(), 'PreVis')]
+
+
+
+//span[@class='md-headline ng-binding']/following-sibling::div@class
+//span[@class='md-headline ng-binding']/following-sibling::div@class
+
+//span[@class='ng-scope']/following-sibling::div@class
+
+plugin__img ng-scope
+
+
+//*[@id="identifierNext"]/content/span
+
+//*[@id="page-top"]/nav/div[3]/a[2]
+
+//*[@id="lrefr"]/span
+
+NoReply@snatchbot.me
+//span[contains(text(),'NoReply@snatchbot.me')]
+//*[@id="f"]/table/tbody/tr[1]/td[4]/input
+sbut
+
+//*[contains(@class,'sbut')]
+link=exact:https://snatchbot.me/auth/check_email?token=7fb07c051eb50184aa85a6313bed28a625997ffb
+xpath=(//link[contains(text(),'https://snatchbot.me/auth/check_email')])
+
+Delete Account
+//button[contains(text(), 'Delete Account')]
+//*[@id="m1"]/div/a/span[1]/span[2]
+//*[@id="m1"]/div/a/span[1]/span[2]
+//*[@id="m2"]/div/a/span[2]
+
+//span[contains(text()='InteractionName']
+
+//button[@class='md-fab md-mini md-button ng-scope md-ink-ripple']
+//button[@class='md-icon-button md-button ng-scope md-ink-ripple']
+
+//button[contains(@class,'aui-button submit')]
+//*[@id="addTags"]/md-icon
+//span[contains(text(),'Connect this interaction to others by adding a connection')]/following::div[2]
+
+//span[text()='then go to: ']/following::md-input-container
+
+//md-input-container[contains(@class,'b-auth__contol input-pad b-auth__select ng-scope')]
+
+xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]
+xpath= (//span[text()='then go to: ']/following::md-input-container)[1]
+ng-pristine ng-untouched ng-valid ng-empty
+
+
+
+xpath= (//md-select[contains(@class,'ng-pristine ng-untouched ng-valid ng-empty')])[1]
+
+//md-select[contains(@class,'ng-pristine ng-valid ng-empty ng-touched')]
+
+dashboard.last7days
+checkemail.title
+md-fab md-mini md-button ng-scope md-ink-ripple
+md-fab md-mini md-button ng-scope md-ink-ripple
+
+bot__tooltip-wrap ng-scope
+
+xpath= (//md-input-container[contains(@class,'ng-pristine ng-valid ng-empty ng-touched')])[1]
+
+//div[@data-ng-init='success('Your account has been confirmed, login using your credentials to use services.')']
+data-ng-controller="LoginCtrl"
+//div[@data-ng-controller='LoginCtrl']
+data-ng-init
+
+Девочки, так что в итоге? Пока голосование ни к чему не привело(sad)?
+Тогда:
+ - во сколько?
+ - ответственные за отделы заберите свои подставки (мы минут 5 искали в куче свои 9 штук), чтобы были под рукой и удобно вручать
+
+//span[text()='newsletter@snatchbot.me']
+//div[@translate="login.title"]
+lms
+D:\chromedriver.exe
+C:\Users\user\AppData\Roaming\Composer\vendor\bin;C:\Users\user\AppData\Roaming\npm
+build.chooseInteractionType
+span//[@ng-bind="typesOfModule[modulKey]"]
+typesOfModule[modulKey]
+
+
+//span[@translate='build.errorResponse']/following::textarea
+
+delete_forever
+//md-icon
+//md-icon[contains(text(), 'delete_forever')]
+
+
+
+xpath=(//md-icon[@aria-label='delete_forever'])[5]
+(//md-icon[@aria-label='delete_forever'])[5]
+
+//span[@class='icon-default aui-icon aui-icon-small aui-iconfont-delete']
+
+//a[@class='attachment-title']
+//a[contains(text(), '.mp4')]
+//attachment-title[@title='27.png'
+navigate.logout
+//label[@translate='navigate.logout']
+
+//span[@translate='auth.signIn']
+//label[@translate='navigate.logout']
+//a[contains(text(), 'Log in')]

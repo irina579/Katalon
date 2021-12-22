@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>SportstationResults</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Find and match ID</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>""<datalist><option>""</option><option></option></datalist></td><td>Info</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>i&lt;=10<datalist><option>i&lt;=10</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//tbody/tr[${i}]/td[1]<datalist><option>//tbody/tr[1]/td[1]</option><option>//tbody/tr[${i}]/td[1]</option></datalist></td><td>Name</td>
+</tr>
+<tr><td>storeText</td><td>//tbody/tr[${i}]/td[2]<datalist><option>//tbody/tr[1]/td[2]</option><option>//tbody/tr[${i}]/td[2]</option></datalist></td><td>Date</td>
+</tr>
+<tr><td>storeAttribute</td><td>//tbody/tr[${i}]/td[1]/following::a[@class='btn fa fa-angle-right']@href<datalist><option>//tbody/tr[1]/td[1]/following::a[@class='btn fa fa-angle-right']@href</option><option>//tbody/tr[${i}]/td[1]/following::a[@class='btn fa fa-angle-right']@href</option></datalist></td><td>Link</td>
+</tr>
+<tr><td>store</td><td>${Info}${Name},${Date},${Link}TAB<datalist><option>${Name}</option><option>${Name,${Date,${Link}TAB</option><option>${Info}${Name,${Date,${Link}TAB</option><option>${Info}${Name,${Date},${Link}TAB</option><option>${Info}${Name},${Date},${Link}TAB</option><option>${Info},${Name},${Date},${Link}TAB</option><option>${Info}${Name}${Date}${Link}TAB</option></datalist></td><td>Info</td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${Info}<datalist><option>${Info}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

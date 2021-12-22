@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Sportstation</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Rdif_Add</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=30<datalist><option>${i}&lt;=200</option><option>${i}&lt;=10</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option><option>${i}&lt;=30</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/div/input</option><option>//div[3]/div/div/div/input</option><option>css=div.m-b-1.m-r-1.pr-flex-stretchy.pr-picker &gt; input.form-control</option></datalist></td><td>999re_bgjhbc_nkndcksa${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Add']<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Add']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='Save']<datalist><option>//button[text()='Save']</option><option>//button[@type='submit']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div[2]/div/button</option><option>//form/div/div[2]/div/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create_RUNNER</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=Create Runner<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=2<datalist><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option><option>//input[@value='']</option></datalist></td><td>June29_${i}</td>
+</tr>
+<tr><td>type</td><td>xpath=(//input[@value=''])<datalist><option>xpath=(//input[@value='1'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div[2]/div/input</option><option>//div[2]/div/input</option><option>xpath=(//input[@value=''])</option></datalist></td><td>May_${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select</option><option>//select</option><option>css=select.form-control</option></datalist></td><td>label=0${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select</option><option>//div[2]/select</option><option>css=div.col-md-4 &gt; select.form-control</option></datalist></td><td>label=May</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select</option><option>//div[3]/select</option></datalist></td><td>label=199${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create and add next']<datalist><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option><option>//button[text()='Create and add next']</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create_and_add_RFIDS</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>link=Create Runner<datalist><option>link=Create Runner</option><option>//a[contains(text(),'Create Runner')]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/div/div/a</option><option>//a[contains(@href, '#/events/runners/create')]</option><option>//div/a</option><option>css=a.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>while</td><td>${i}&lt;=2<datalist><option>${i}&lt;=2</option><option>${i}&lt;=10</option><option>${i}&lt;=200</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>//input[@value='']<datalist><option>//input[@value='']</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//input[@value='2']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div/div/input</option><option>//input</option><option>css=input.form-control</option></datalist></td><td>Ablabama${i}</td>
+</tr>
+<tr><td>type</td><td>xpath=(//input[@value=''])<datalist><option>xpath=(//input[@value=''])</option><option>xpath=(//input[@value='1'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div/div[2]/div/input</option><option>//div[2]/div/input</option></datalist></td><td>May_${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div/select</option><option>//select</option><option>css=select.form-control</option></datalist></td><td>label=0${i}</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[2]/select</option><option>//div[2]/select</option><option>css=div.col-md-4 &gt; select.form-control</option></datalist></td><td>label=May</td>
+</tr>
+<tr><td>select</td><td>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select<datalist><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[2]/div/div[3]/select</option><option>//div[3]/select</option></datalist></td><td>label=199${i}</td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>j</td>
+</tr>
+<tr><td>while</td><td>${j}&lt;=10<datalist><option>${i}&lt;=30</option><option>${i}&lt;=200</option><option>${i}&lt;=10</option><option>${i}&lt;=2</option><option>${i}&lt;=1</option><option>${i}&lt;=5</option><option>${i}&lt;=39</option><option>${i}&lt;=50</option><option>${i}&lt;=49</option><option>${i}&lt;=99</option><option>${i}&lt;=29</option><option>${i}&lt;=23</option><option>${i}&lt;=32</option><option>${i}&lt;=100</option><option>${j}&lt;=10</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@value='']<datalist><option>//input[@value='']</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/div/input</option><option>//div[3]/div/div/div/input</option><option>css=div.m-b-1.m-r-1.pr-flex-stretchy.pr-picker &gt; input.form-control</option></datalist></td><td>Completely_new_${j}_${i}</td>
+</tr>
+<tr><td>click</td><td>//button[text()='Add']<datalist><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${j}+1<datalist><option>${i}+1</option><option>${j}+1</option></datalist></td><td>j</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[text()='Create and add next']<datalist><option>//button[text()='Create and add next']</option><option>//button[text()='Add']</option><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='app-container']/div/div/div[2]/div/div/form/div/div/fieldset/div[3]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary-outline.m-b-1.pr-flex-fixed</option><option>xpath=(//a[contains(text(),'Add)])</option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">User_search_iframe</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Runners.csv<datalist><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>Runners.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>typeAndWait</td><td>//div[@class='pr-picker']//input [@class='form-control']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reset'])[1]/following::div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/following::div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Viola Großmann'])[1]/preceding::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Erik Siering'])[1]/preceding::div[12]</option><option>//div[@id='app-container']/div/div/div/div[2]/div[3]/div/div[3]</option><option>//div[3]/div/div[3]</option><option>css=div.event-ranking-list-item-header-runner-name</option><option>xpath=(.//*[normalize-space(text()) and normalize-sp:div[6]ace(.)='Reset'])[1]/following:</option><option>//div[@class='pr-picker']//input [@class='form-control']</option></datalist></td><td>${name}</td>
+</tr>
+<tr><td>pause</td><td>5000<datalist><option>1000</option><option>5000</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForVisible</td><td>xpath=(//div[contains(text(),'${name}')])<datalist><option>xpath=(//div[contains(text(),'${name}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>assertNotXpathCount</td><td>//div[@class='event-ranking-list-item']<datalist><option>//div[@class='event-ranking-list-item']</option></datalist></td><td>0</td>
+</tr>
+<tr><td>assertElementPresent</td><td>xpath=(//div[contains(text(),'${name}')])<datalist><option>xpath=(//div[contains(text(),'Bro')])</option><option>xpath=(//div[contains(text(),${name})])</option><option>xpath=(//div[contains(text(),'${name}')])</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@class='event-ranking-list-item-header-runner-name']<datalist><option>//div[@class='event-ranking-list-item-header-runner-name']</option></datalist></td><td>${name}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

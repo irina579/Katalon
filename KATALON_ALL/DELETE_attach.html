@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>DELETE_attach</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Deleting</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>issues.csv<datalist><option>week.csv</option><option>data.csv</option><option>data1.csv</option><option>data2.csv</option><option>data3.csv</option><option>issues.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://issues.belitsoft.com/browse/${link}<datalist><option>${link1}${start_date}${link2}${end_date}${link3}</option><option>${link}</option><option>${link_current}</option><option>'${link1}${start_date}${link2}${end_date}${link3}'</option><option>'https://issues.belitsoft.com/browse/'${link}</option><option>https://issues.belitsoft.com/browse/${link}</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=opsbar-operations_more<datalist><option>id=opsbar-operations_more</option><option>link=More</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Agile Board'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Comment'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reopen Issue'])[1]/preceding::a[1]</option><option>//a[@id='opsbar-operations_more']</option><option>//div[@id='opsbar-opsbar-operations']/a[2]</option><option>xpath=(//a[contains(@href, '#')])[7]</option><option>//div/div/div/div[2]/a[2]</option><option>css=#opsbar-operations_more</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(),'Delete All Attachments')])<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clone and move this issue'])[1]/following::span[2]</option><option>//aui-item-link[@id='ru-andreymarkelov-delete-all-attachments-page']/a/span</option><option>//aui-section[6]/div/aui-item-link[2]/a/span</option><option>css=#ru-andreymarkelov-delete-all-attachments-page &gt; a &gt; span.trigger-label</option><option>xpath=(//span[contains(text(),'Delete All Attachments')])</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=add<datalist><option>name=add</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete All Attachments'])[3]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete All Attachments'])[2]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/preceding::input[1]</option><option>//input[@name='add']</option><option>//div[@id='ru-andreymarkelov-delete-all-attachments-page-dialog']/div[2]/form/div[4]/div/input</option><option>//div[4]/div/input</option><option>css=input[name="add"]</option></datalist></td><td></td>
+</tr>
+<tr><td>pause</td><td>1000<datalist><option>1000</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
