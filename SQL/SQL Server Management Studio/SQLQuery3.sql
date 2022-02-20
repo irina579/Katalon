@@ -1,0 +1,1 @@
+select *from dwh.Show where ShowCode in ('A-LIB', 'AMB2', 'AMB3', 'AVG')

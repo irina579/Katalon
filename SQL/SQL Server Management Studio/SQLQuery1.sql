@@ -1,0 +1,1 @@
+select *from dwh.Ones where ArtistId=96523 and ExtractDataType='S' and period='2021-03-08'

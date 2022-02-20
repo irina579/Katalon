@@ -1,0 +1,1 @@
+select *from dwh.Ones where ShowId=810 and ExtractDataType='S'--810

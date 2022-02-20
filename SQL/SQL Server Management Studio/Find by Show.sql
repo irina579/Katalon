@@ -1,0 +1,1 @@
+select *from dwh.Show where ShowCode='CLF2' --and ExtractDataType='S'--810
