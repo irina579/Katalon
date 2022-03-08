@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-<title>DASH_tests_08_03_22</title>
+<title>DASH_tests_08_03_22_v2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -27,6 +27,21 @@
 <tr><td>waitForVisible</td><td>//div[contains(text(), 'File')]<datalist><option>//div[contains(text(), 'File')]</option></datalist></td><td></td></tr>
 <tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td></tr>
 <tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Replace users in CSV file</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>100<datalist><option>100</option></datalist></td><td>index</td></tr>
+<tr><td>storeEval</td><td>${index}+1<datalist><option>${index}+1</option></datalist></td><td>index1</td></tr>
+<tr><td>writeToCSV</td><td>Users.csv,0,username<datalist><option>data.csv,0,first</option><option>users.csv,0,first</option><option>users.csv,0,username</option><option>users.csv,0,username</option><option>Users.csv,0,username</option></datalist></td><td>user${index}</td></tr>
+<tr><td>writeToCSV</td><td>Users.csv,0,email<datalist><option>data.csv,0,last</option><option>users.csv,0,last</option><option>users.csv,0,email</option><option>Users.csv,0,email</option></datalist></td><td>user${index}@mail.ru</td></tr>
+<tr><td>writeToCSV</td><td>Users.csv,1,username<datalist><option>users.csv,0,username</option><option>data.csv,0,first</option><option>users.csv,0,first</option><option>users.csv,1,username</option><option>Users.csv,1,username</option></datalist></td><td>user${index1}</td></tr>
+<tr><td>writeToCSV</td><td>Users.csv,1,email<datalist><option>users.csv,0,email</option><option>data.csv,0,last</option><option>users.csv,0,last</option><option>users.csv,1,email</option><option>users.csv,1,email</option><option>Users.csv,1,email</option></datalist></td><td>user${index1}@mail.ru</td></tr>
+<tr><td>loadVars</td><td>Users.csv<datalist><option>users.csv</option><option>Users.csv</option></datalist></td><td></td></tr>
+<tr><td>echo</td><td>${username} - ${email}<datalist><option>username + email</option><option>${username} + ${email}</option><option>${username} - ${email}</option></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
