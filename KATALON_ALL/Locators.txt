@@ -143,3 +143,6 @@ navigate.logout
 //span[@translate='auth.signIn']
 //label[@translate='navigate.logout']
 //a[contains(text(), 'Log in')]
+
+Search in console
+$x("//div[@class=' ml-6']")
