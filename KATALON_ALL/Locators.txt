@@ -146,3 +146,5 @@ navigate.logout
 
 Search in console
 $x("//div[@class=' ml-6']")
+$x("//div[@class='svg-inline--fa fa-pencil fa-w-16']")
+svg-inline--fa fa-pencil fa-w-16

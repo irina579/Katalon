@@ -1,0 +1,64 @@
+id,name
+1001,2D DMP
+1010,Environments
+1094,3D DMP
+1004,Animation
+1059,Facial Animation
+1061,Mocap Animation
+1133,Prep Animation
+1134,Tech Fix
+1006,Assets
+1007,Blendshape
+1017,Look Dev
+1020,Modelling
+1032,Texturing
+1138,Cloth
+1139,Modelling - Character
+1140,Modelling - Set
+1141,Texturing - Character
+1142,Texturing - Set
+1008,Compositing
+1028,Stereo
+1120,2D Generalist
+1143,Finishing
+1144,Flame
+1009,Crowd
+1012,FX
+1145,FX Setup
+1013,Groom
+1071,CHF
+1015,Layout
+1146,Final Layout
+1016,Lighting
+1068,LRC
+1147,Prelighting
+1021,Paint/Prep
+1022,PreVis
+1024,Rigging
+1026,Rotoscope
+1030,Tech Anim
+1018,Matchmove
+1025,Roto Anim
+1047,Virtual Production
+1034,Data Capture
+1057,Colour
+1062,Art
+1063,Concept
+1135,Character Art
+1136,Environment Art
+1137,Storyboard
+1067,CG
+1073,Lighting and Compositing
+1115,CL - Modelling
+1116,CL - Texturing
+1117,CL - LookDev
+1118,CL - Groom
+1119,CL - Rigging
+1121,Design
+1123,Editorial
+1124,Animatics Editorial
+1125,Animation Assembly
+1126,Final Set Dress
+1127,Layout Assembly
+1128,Layout Match
+1129,Render Assembly
