@@ -17,8 +17,8 @@ md-text ng-binding
 
 //strong[contains(text(), 'Component/s:')]
 
-
-//button[contains(@class,'aui-button submit')]
+//*[@id="EditShowEl"]/div/div[3]/div[2]/div[2]/div[1]/div/div[1]/div[2]/div[1]/div[2]/div
+//div[contains(@class,'VInputFake VInputFake_string VInputFake_default-new')]
 
 NOT!!!//md-table-container[contains(@class,'ng-scope'/Empty set data)]
 
@@ -148,3 +148,8 @@ Search in console
 $x("//div[@class=' ml-6']")
 $x("//div[@class='svg-inline--fa fa-pencil fa-w-16']")
 svg-inline--fa fa-pencil fa-w-16
+
+
+//div[contains(text(), 'Amount of Assets')]
+//div[@class='input-group__title input-group__title_required' and contains(text(), 'Amount of Assets')]
+//*[@id="EditShowEl"]/div/div[3]/div[2]/div[2]/div[1]/div/div[1]/div[2]/div[13]/div[2]/div/span
