@@ -153,3 +153,11 @@ svg-inline--fa fa-pencil fa-w-16
 //div[contains(text(), 'Amount of Assets')]
 //div[@class='input-group__title input-group__title_required' and contains(text(), 'Amount of Assets')]
 //*[@id="EditShowEl"]/div/div[3]/div[2]/div[2]/div[1]/div/div[1]/div[2]/div[13]/div[2]/div/span
+
+
+send_keys(Keys.PAGE_DOWN) ??? send_keys(Keys.END)
+execute_script:
+execute_script("window.scrollTo(0,document.body.scrollHeight)")
+execute_script("return arguments[0].scrollIntoVuew(true); element")
+VButton__text
+//span[@class='VButton__text' and contains(text(), 'Add')]
