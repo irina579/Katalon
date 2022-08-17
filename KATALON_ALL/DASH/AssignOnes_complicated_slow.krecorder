@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>AssignOnes_complicated_slow</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">MultipleAssign_withoutAddPopUp</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>2<datalist><option>1</option><option>2</option><option>1</option><option>2</option></datalist></td><td>count</td></tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@id='VDataTable__header']/div/div[3]/div/div[2]/div[3]/div[2]/div/div[2]<datalist><option>7</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[3]/div/div[2]/div[3]/div[2]/div/div[2]</option></datalist></td><td>month</td></tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div</option></datalist></td><td>week</td></tr>
+<tr><td>while</td><td>${count}<=25<datalist><option>${count}<=30</option><option>${count}<=30</option><option>${count}<=31</option><option>${count}<=29</option><option>${count}<=4</option><option>${count}<=28</option><option>${count}<=9</option><option>${count}<=3</option><option>${count}<=10</option><option>${count}<=5</option><option>${count}<=17</option><option>${count}<=41</option><option>${count}<=25</option></datalist></td><td>Ones+1</td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div</option></datalist></td><td></td></tr>
+<tr><td>shiftKeyDown</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div[${week}]<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div[${week}]</option></datalist></td><td></td></tr>
+<tr><td>shiftKeyUp</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]<datalist><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[16]/div[2]/div/div[2]</option><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]</option><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${count}+1<datalist><option>${count}+1</option></datalist></td><td>count</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">OnesAssign_Simple</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Dates.csv<datalist><option>Dates.csv</option><option>data.csv</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist></datalist></td><td>exist</td></tr>
+<tr><td>if</td><td>exist>0<datalist><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>loadVars</td><td>UID.csv<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">OnesAssign_CORRECT</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Dates.csv<datalist><option>Dates.csv</option><option>data.csv</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist></datalist></td><td>exist</td></tr>
+<tr><td>if</td><td>exist>0<datalist><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>loadVars</td><td>UID.csv<datalist></datalist></td><td></td></tr>
+<tr><td>gotoIf</td><td>exist<=0<datalist><option>exist<=0</option></datalist></td><td>end</td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']<datalist></datalist></td><td>busy</td></tr>
+<tr><td>if </td><td>busy<=0<datalist><option>busy<=0</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>label</td><td>end<datalist><option>end</option></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">OnesAssign_improved_cycle</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Dates.csv<datalist><option>Dates.csv</option><option>data.csv</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist></datalist></td><td>exist</td></tr>
+<tr><td>while</td><td>exist>0<datalist><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>art_num</td></tr>
+<tr><td>while</td><td>${art_num}<${count}<datalist><option>${art_num}</option><option>${art_num}<${count}</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${artist${art_num}}<datalist><option>${artist${art_num}}</option></datalist></td><td>UID</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']<datalist></datalist></td><td>busy</td></tr>
+<tr><td>if </td><td>busy<=0<datalist><option>busy<=0</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>gotoIf</td><td>exist<=0<datalist><option>exist<=0</option></datalist></td><td>end</td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>label</td><td>end<datalist><option>end</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>5<datalist><option>5</option></datalist></td><td>c</td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">ArtistsMapping</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td></tr>
+<tr><td>loadVars</td><td>UID.csv<datalist><option>UID.csv</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${UID}<datalist><option>${UID}</option></datalist></td><td>artist${i}</td></tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${i}-1<datalist><option>${i}-1</option></datalist></td><td>count</td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>art_num</td></tr>
+<tr><td>while</td><td>${art_num}<${count}<datalist><option>${art_num}<${count}</option><option>${art_num}</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>artist${art_num}<datalist><option>${artist${art_num}}</option><option>artist${art_num}</option></datalist></td><td>UID</td></tr>
+<tr><td>storeEval</td><td>${art_num}+1<datalist><option>${art_num}+1</option></datalist></td><td>art_num</td></tr>
+<tr><td>echo</td><td>${UID}<datalist><option>${UID}</option></datalist></td><td></td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td>loadVars</td><td>Dates.csv<datalist></datalist></td><td></td></tr>
+<tr><td>echo</td><td>${date}<datalist></datalist></td><td></td></tr>
+<tr><td>gotoIf</td><td>${date}==2022-07-25<datalist></datalist></td><td>end</td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>label</td><td>end<datalist></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">OnesAssign</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td><td>2022-07-11<datalist></datalist></td><td>date</td></tr>
+<tr><td>loadVars</td><td>UID.csv<datalist></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']<datalist><option>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']</option></datalist></td><td>busy</td></tr>
+<tr><td>if </td><td>busy<=0<datalist><option>busy<=0</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist></datalist></td><td>exist</td></tr>
+<tr><td>if</td><td>exist>0<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist></datalist></td><td></td></tr>
+<tr><td>else</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>gotoLabel</td><td>end<datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>label</td><td>end<datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Assign</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Dates.csv<datalist><option>Dates.csv</option><option>data.csv</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>if</td><td>exist>0<datalist><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>art_num</td></tr>
+<tr><td>while</td><td>${art_num}<${count}<datalist><option>${art_num}<${count}</option><option>${art_num}</option></datalist></td><td></td></tr>
+<tr><td>gotoIf</td><td>exist<=0<datalist><option>exist<=0</option></datalist></td><td>next_date</td></tr>
+<tr><td>storeEval</td><td>artist${art_num}<datalist><option>artist${art_num}</option><option>${artist${art_num}}</option></datalist></td><td>UID</td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']<datalist><option>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']</option></datalist></td><td>busy</td></tr>
+<tr><td>if </td><td>busy<=0<datalist><option>busy<=0</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist><option>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist><option>//div[@class='row__cell uniqueId${UID}-${date}']</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>storeEval</td><td>${art_num}+1<datalist><option>${art_num}+1</option></datalist></td><td>art_num</td></tr>
+<tr><td>else</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${art_num}+1<datalist><option>${art_num}+1</option></datalist></td><td>art_num</td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>label</td><td>next_date<datalist><option>next_date</option></datalist></td><td></td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>echo</td><td>Test<datalist><option>Test</option></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist><option>Dates.csv</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Temp copy</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>2<datalist><option>1</option><option>2</option><option>1</option><option>2</option></datalist></td><td>count</td></tr>
+<tr><td>while</td><td>${count}<=29<datalist><option>${count}<=30</option><option>${count}<=30</option><option>${count}<=31</option><option>${count}<=29</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div[2]</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div</option></datalist></td><td></td></tr>
+<tr><td>shiftKeyDown</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[6]/div[2]/div[4]<datalist></datalist></td><td></td></tr>
+<tr><td>shiftKeyUp</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]<datalist><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[16]/div[2]/div/div[2]</option><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${count}+1<datalist><option>${count}+1</option></datalist></td><td>count</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Week Ones'])[1]/following::div[70]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='IRINATES'])[1]/following::div[72]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lead'])[1]/preceding::div[615]</option><option>xpath=//div[4]/div[2]/div/div[2]/div</option><option>css=div.row__cell.cart-cell-2022-07-04</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Week Ones'])[1]/following::div[633]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='IRINATES'])[1]/following::div[635]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lead'])[1]/preceding::div[52]</option><option>xpath=//div[2]/div[7]/div[2]/div</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[11]/div[2]/div/div<datalist><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[11]/div[2]/div/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='ENV'])[6]/following::div[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Flex / Con'])[8]/following::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='IRINATES'])[2]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='IRINATES'])[3]/preceding::div[3]</option><option>xpath=//div[11]/div[2]/div/div</option><option>css=div.row__cell.uniqueId52525-2022-07-04</option></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Week Ones'])[1]/following::div[633]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='IRINATES'])[1]/following::div[635]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Lead'])[1]/preceding::div[52]</option><option>xpath=//div[2]/div[7]/div[2]/div</option></datalist></td><td></td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[3]/div[7]/div[2]/div[3]/div[2]/div/div[2]<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[3]/div[7]/div[2]/div[3]/div[2]/div/div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='W2'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='We'])[27]/following::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='NB_MERRY'])[2]/preceding::div[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Animation'])[3]/preceding::div[5]</option><option>xpath=//div[7]/div[2]/div[3]/div[2]/div/div[2]</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@id='VDataTable__header']/div/div[3]/div/div[2]/div[3]/div[2]/div/div[2]<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[3]/div[7]/div[2]/div[3]/div[2]/div/div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='W2'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='We'])[27]/following::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='NB_MERRY'])[2]/preceding::div[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Animation'])[3]/preceding::div[5]</option><option>xpath=//div[7]/div[2]/div[3]/div[2]/div/div[2]</option><option>xpath=//div[@id='VDataTable__header']/div/div[3]/div/div[2]/div[3]/div[2]/div/div[2]</option></datalist></td><td>x</td></tr>
+<tr><td></td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div[2]<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Week Ones'])[1]/following::div[636]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Animation'])[3]/following::div[637]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Animation'])[4]/preceding::div[3]</option><option>xpath=//div[2]/div[7]/div[2]/div[2]</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Mapping</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td></tr>
+<tr><td>loadVars</td><td>UID.csv<datalist><option>UID.csv</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${UID}<datalist><option>${UID}</option></datalist></td><td>artist${i}</td></tr>
+<tr><td>storeEval</td><td>${i}+1<datalist><option>${i}+1</option></datalist></td><td>i</td></tr>
+<tr><td>endLoadVars</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${i}-1<datalist><option>${i}-1</option></datalist></td><td>count</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">BulkSalaryIncrease</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>parseInt('1')<datalist><option>125+164</option><option>Math.toInt(36).replace(/[^a-z]+/g, '').substr(0, 8)</option><option>Math.toInt(36).replace(/[^a-z]+/g, '').substr(0, 8</option><option>Math.toInt(36)</option><option>toInt(36)</option><option>parseInt(36)</option><option>parseInt(36bjhbhj)</option><option>parseInt('36bjhbhj')</option><option>parseInt('1')</option></datalist></td><td>i</td></tr>
+<tr><td>storeEval</td><td>12<datalist><option>12</option></datalist></td><td>z</td></tr>
+<tr><td>click</td><td>//div[contains(text(), '139611')]/following-sibling::div/descendant::span[@class='VInputFake__label']<datalist><option>//div[contains(text(), '139611')]/following-sibling::div/descendant::span[@class='VInputFake__label']</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
+<tr><td>sendKeys</td><td>//div[contains(text(), '139611')]/following::div[contains(@class,'VInputFake__input')]/input<datalist><option>//div[contains(text(), '139611')]/following::div[contains(@class,'VInputFake__input')]/input</option></datalist></td><td>${i}</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Assign copy</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Dates.csv<datalist><option>Dates.csv</option><option>data.csv</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>if</td><td>exist>0<datalist><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>art_num</td></tr>
+<tr><td>while</td><td>${art_num}<${count}<datalist><option>${art_num}<${count}</option><option>${art_num}</option></datalist></td><td></td></tr>
+<tr><td>if</td><td>exist>0<datalist><option>exist<=0</option><option>exist>0</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>artist${art_num}<datalist><option>artist${art_num}</option><option>${artist${art_num}}</option></datalist></td><td>UID</td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']<datalist><option>//div[@class='row__cell uniqueId${UID}-${date}']/div[@class='A W']</option></datalist></td><td>busy</td></tr>
+<tr><td>if </td><td>busy<=0<datalist><option>busy<=0</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]<datalist><option>xpath=(//div[@class='row__cell cart-cell-${date}'])[2]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[@class='row__cell uniqueId${UID}-${date}']<datalist><option>//div[@class='row__cell uniqueId${UID}-${date}']</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='row__cell__ones__multiple undefined']</option></datalist></td><td>many</td></tr>
+<tr><td>storeXpathCount</td><td> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']<datalist><option> //div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option><option>//div[@class='row__cell cart-cell-${date}']/div/div[@class='A undefined']</option></datalist></td><td>one</td></tr>
+<tr><td>storeEval</td><td>${many}+${one}<datalist><option>${many}+${one}</option></datalist></td><td>exist</td></tr>
+<tr><td>storeEval</td><td>${art_num}+1<datalist><option>${art_num}+1</option></datalist></td><td>art_num</td></tr>
+<tr><td>else</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${art_num}+1<datalist><option>${art_num}+1</option></datalist></td><td>art_num</td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>elseIf</td><td>exist<=0<datalist><option>exist<=0</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1000<datalist><option>${art_num}+1</option><option>1000</option></datalist></td><td>art_num</td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>echo</td><td>Test<datalist><option>Test</option></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>endLoadVars</td><td><datalist><option>Dates.csv</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>DASH_performance_21_07_22</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">ColumnsHiding</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//span[@class='header__columns-toggler__toggler']<datalist><option>//span[@class='header__columns-toggler__toggler']</option><option>//span[@class='header__columns-toggler__toggler']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='allColumnSelectInput']<datalist><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='allColumnSelectInput']<datalist><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='proposedContractExtensionDateShowColumn']<datalist><option>//label[@for='proposedContractExtensionDateShowColumn']</option><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[@class='header__close']<datalist><option>//button[@class='header__close']</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">ColumnsHiding_only_CON_CDDU</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//span[@class='header__columns-toggler__toggler']<datalist><option>//span[@class='header__columns-toggler__toggler']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[contains(text(), 'Reset')]<datalist><option>//span[contains(text(), 'Reset')]</option></datalist></td><td></td></tr>
+<tr><td>waitForVisible</td><td>//span[contains(text(), 'Type')]<datalist><option>//span[contains(text(), 'Type')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[contains(text(), 'Type')]<datalist><option>//span[contains(text(), 'Type')]</option><option>//span[contains(text(), 'Type')]</option><option>//span[contains(text(), 'Type')]</option><option>//span[contains(text(), 'Type')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[contains(text(), 'Select All')]<datalist><option>//label[contains(text(), 'Select all')]</option><option>//label[contains(text(), 'Select All')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[contains(text(), 'Select All')]<datalist><option>//label[contains(text(), 'Select all')]</option><option>//label[contains(text(), 'Select All')]</option></datalist></td><td></td></tr>
+<tr><td>waitForVisible</td><td>//label[contains(text(), 'Con')]<datalist><option>//label[contains(text(), 'Con')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[contains(text(), 'Con')]<datalist><option>//label[contains(text(), 'Con')]</option><option>//label</option><option>//label[contains(text(), 'Con')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[contains(text(), 'CDDU')]<datalist><option>//label[contains(text(), 'CDDU')]</option><option>//label[contains(text(), 'Con')]</option><option>//label</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[@class='header__columns-toggler__toggler']<datalist><option>//span[@class='header__columns-toggler__toggler']</option><option>//span[@class='header__columns-toggler__toggler']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='allColumnSelectInput']<datalist><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='allColumnSelectInput']<datalist><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//label[@for='proposedContractExtensionDateShowColumn']<datalist><option>//label[@for='proposedContractExtensionDateShowColumn']</option><option>//label[@for='allColumnSelectInput']</option><option>//span[for='allColumnSelectInput']</option><option>//label[for='allColumnSelectInput']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[@class='header__close']<datalist><option>//button[@class='header__close']</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">ContractExtention</td></tr>
+</thead>
+<tbody>
+<tr><td>storeXpathCount</td><td>//span[contains(text(), 'Enter date')]<datalist><option>//span[contains(text(), 'Enter date')]</option></datalist></td><td>num</td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>i</option><option>1</option></datalist></td><td>i</td></tr>
+<tr><td>while</td><td>${i}<=${num}<datalist><option>${i}<=${num}</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//span[contains(text(), 'Enter date')])[${i}]<datalist><option>//span[contains(text(), 'Enter date')]</option><option>xpath=(//span[contains(text(), 'Enter date')])[${i}]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[contains(text(), '2022')]<datalist><option>//button[contains(text(), '2022')]</option><option>xpath=(//button[contains(text(), '2022')])</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-year='2023']<datalist><option>//td[@class='2023']</option><option>//td[contains(text(), '2023')]</option><option>//button[contains(text(), '2022')]</option><option>//td[@data-year='2023']</option><option>xpath=(//td[@data-year='2023'])</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-month='11']<datalist><option>//td[@class='Aug']</option><option>//td[@data-year='Dec']</option><option>//td[@data-month='12']</option><option>//td[@data-month='11']</option><option>xpath=(//td[@data-month='11'])</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-day='30']<datalist><option>//td[@class='Aug']</option><option>//td[@data-day='30']</option><option>xpath=(//td[@data-day='30'])</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[contains(text(), 'Confirm')]<datalist><option>//button[contains(text(), 'Confirm')]</option><option>//td[@class='cell']</option><option>//td[@class='cell today']</option><option>//button[contains(text(), 'Confirm')]</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1+${i}<datalist><option>1+${i}</option></datalist></td><td>i</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">MultipleAssign</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>5<datalist><option>10</option><option>3</option><option>26</option><option>20</option><option>2</option><option>5</option></datalist></td><td>number_ones</td></tr>
+<tr><td>storeEval</td><td>2<datalist><option>1</option><option>2</option><option>1</option><option>2</option></datalist></td><td>count</td></tr>
+<tr><td>storeXpathCount</td><td>//div[@class='header__month-name']<datalist><option>//div[@class='header__month-name']</option></datalist></td><td>month</td></tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div</option></datalist></td><td>week</td></tr>
+<tr><td>while</td><td>${count}<=(${number_ones}+1)<datalist><option>${count}<=30</option><option>${count}<=30</option><option>${count}<=31</option><option>${count}<=29</option><option>${count}<=4</option><option>${count}<=28</option><option>${count}<=9</option><option>${count}<=3</option><option>${count}<=10</option><option>${count}<=5</option><option>${count}<=17</option><option>${count}<=41</option><option>${count}<=25</option><option>${count}<=${number_ones}</option><option>${count}<=(${number_ones}+1)</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div/div[2]/div</option></datalist></td><td></td></tr>
+<tr><td>shiftKeyDown</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div[${week}]<datalist><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[7]/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div${month}/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div</option><option>xpath=//div[@id='VDataTable__header']/div/div[4]/div[2]/div[${month}]/div[2]/div[${week}]</option></datalist></td><td></td></tr>
+<tr><td>shiftKeyUp</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]<datalist><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[16]/div[2]/div/div[2]</option><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]</option><option>xpath=//div[@id='NewDlOnes']/div/div[4]/div[2]/div/div/div[2]/div/div[2]/div/div/div[${count}]/div[2]/div/div[2]</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td>//span[@class='VButton__text' and contains(text(), 'Add')]<datalist><option>//span[contains(text(), 'Confirm')])</option><option>//span[contains(text(), 'Add')])</option><option>//span[contains(text(), 'Add')])</option><option>//span[@class='VButton__text' and contains(text(), 'Add')]</option></datalist></td><td>add</td></tr>
+<tr><td>if</td><td>add<datalist><option>add</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[@class='VButton__text' and contains(text(), 'Add')]<datalist><option>//span[contains(text(), 'Add')])</option><option>//span[@class='VButton__text' and contains(text(), 'Add')]</option></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>${count}+1<datalist><option>${count}+1</option></datalist></td><td>count</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
