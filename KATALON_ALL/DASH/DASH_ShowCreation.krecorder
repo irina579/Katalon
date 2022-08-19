@@ -112,6 +112,57 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
+<tr><td rowspan="1" colspan="3" data-tags="">CreateShowNewUI_OK</td></tr>
+</thead>
+<tbody>
+<tr><td>storeEval</td><td>'I'+new Date().getDate()+"_"+new Date().getMonth()+"_"+new Date().getUTCMinutes()<datalist><option>'I'+new Date().getDate()+"_"+new Date().getMonth()+"_"+new Date().getUTCMinutes()</option></datalist></td><td>code</td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Code')]/following::span<datalist><option>//div[contains(text(), 'Code')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>//div[contains(text(), 'Code')]/following::input<datalist><option>//div[contains(text(), 'Code')]/following::input</option></datalist></td><td>${code}</td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Name')]/following::span<datalist><option>//div[contains(text(), 'Name')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>//div[contains(text(), 'Name')]/following::input<datalist><option>//div[contains(text(), 'Name')]/following::input</option></datalist></td><td>${code}</td></tr>
+<tr><td>click</td><td>//div[@class='toggle__label']<datalist><option>//div[@class='toggle__label' and contains(text(), 'Select color')]</option><option>//div[@class='toggle__label']</option></datalist></td><td>Select color</td></tr>
+<tr><td>type</td><td>//input[@class='cp-input__input']<datalist><option>//input[@class='cp-input__input']</option></datalist></td><td>#27973C12</td></tr>
+<tr><td>click</td><td>//span[@class='VButton__text' and contains(text(), 'Ok')]<datalist><option>//span[@class='VButton__text' and contains(text(), 'Ok')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[contains(text(), 'Awarded')]<datalist><option>//span[contains(text(), 'Awarded')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'Awarded')]<datalist><option>//a[contains(text(), 'Awarded')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Status')]/following::span<datalist><option>//span[contains(text(), 'Inactive')]</option><option>//div[contains(text(), 'Status')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'Active')]<datalist><option>//a[contains(text(), 'Active')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Category')]/following::div<datalist><option>//div[contains(text(), 'Category')]/following::div</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Theatrical<datalist><option>link=Theatrical</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Start Date')]/following::div<datalist><option>//div[contains(text(), 'Start Date')]/following::div</option></datalist></td><td></td></tr>
+<tr><td>storeElementPresent</td><td>//td[@class='cell today']<datalist><option>//td[@class='cell today']</option></datalist></td><td>StartDateEmpty</td></tr>
+<tr><td>if</td><td>${StartDateEmpty}<datalist><option>${StartDateEmpty}</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@class='cell today']<datalist><option>//td[@class='cell today']</option><option>//td[@class='cell today']</option></datalist></td><td></td></tr>
+<tr><td>endIf</td><td><datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[contains(text(), 'Confirm')]<datalist><option>//button[contains(text(), 'Confirm')]</option><option>//button[contains(text(), 'Confirm')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'End Date')]/following::div<datalist><option>//div[contains(text(), 'End Date')]/following::div</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[@class='mx-btn mx-btn-text mx-btn-current-year']<datalist><option>//button[contains(text(), '2022')]</option><option>//button[@class='mx-btn mx-btn-text mx-btn-current-year']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-year='2023']<datalist><option>//td[@data-year='2023']</option><option>//td[contains(text(), '2023')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-month='11']<datalist><option>//td[@data-month='11']</option><option>//td[@data-year='2023']</option><option>//td[contains(text(), '2023')]</option><option>//td[@data-month='12']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//td[@data-day='31']<datalist><option>//td[@data-day='31']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[contains(text(), 'Confirm')]<datalist><option>//button[contains(text(), 'Confirm')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Show Currency')]/following::span<datalist><option>//div[contains(text(), 'Show Currency')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'GBP (£)')]<datalist><option>//a</option><option>//a[contains(text(), 'GBP (£)')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Primary')]/following::span<datalist><option>//div[contains(text(), 'Show Currency')]/following::span</option><option>//div[contains(text(), 'Primary')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'London (MPC)')]<datalist><option>//a[contains(text(), 'GBP (£)')]</option><option>//a[contains(text(), 'London (MPC)')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Secondary')]/following::span<datalist><option>//div[contains(text(), 'Primary')]/following::span</option><option>//div[contains(text(), 'Show Currency')]/following::span</option><option>//div[contains(text(), 'Secondary')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='ui-checkbox ui-checkbox_default-new-checkbox']/input)[1]<datalist><option>//span[@class='VButton__text' and contains(text(), 'Ok')]</option><option>//span[@class='ui-checkbox ui-checkbox_default-new-checkbox']</option><option>//span[@class='ui-checkbox ui-checkbox_default-new-checkbox']/input</option><option>//span[@class='ui-checkbox ui-checkbox_default-new-checkbox']/following::input</option><option>xpath=(//span[@class='ui-checkbox ui-checkbox_default-new-checkbox']/following/input)[1]</option><option>xpath=(//span[@class='ui-checkbox ui-checkbox_default-new-checkbox']/input)[1]</option><option>xpath=(//div[@class='ui-checkbox ui-checkbox_default-new-checkbox']/input)[1]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//span[contains(text(), 'Show Inputs')]<datalist><option>//span[contains(text(), 'Show Inputs')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Primary Producer')]/following::span<datalist><option>//div[contains(text(), 'Primary')]/following::span</option><option>//div[contains(text(), 'Show Currency')]/following::span</option><option>//div[contains(text(), 'Primary Producer')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'global')]<datalist><option>//a[contains(text(), 'London (MPC)')]</option><option>//a[contains(text(), 'GBP (£)')]</option><option>//a[contains(text(), 'global')]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//div[contains(text(), 'Executive Producer')]/following::span<datalist><option>//div[contains(text(), 'Primary Producer')]/following::span</option><option>//div[contains(text(), 'Primary')]/following::span</option><option>//div[contains(text(), 'Show Currency')]/following::span</option><option>//div[contains(text(), 'Secondary Producer')]/following::span</option><option>//div[contains(text(), 'Executive Producer')]/following::span</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//a[contains(text(), 'global')]<datalist><option>//a[contains(text(), 'global')]</option><option>//a[contains(text(), 'London (MPC)')]</option><option>//a[contains(text(), 'GBP (£)')]</option></datalist></td><td></td></tr>
+<tr><td>storeXpathCount</td><td>xpath=(//div[@class='input-group__title input-group__title_required']/following::div[@class='input-group__input input-group__input_date-picker'][1])<datalist><option>xpath=(//div[@class='ui-checkbox ui-checkbox_default-new-checkbox']/input)[1]</option><option>xpath=(//div[@class='input-group__title input-group__title_required']/following::)[1]</option><option>xpath=(//div[@class='input-group__title input-group__title_required']/following::div[@class='input-group__input input-group__input_date-picker'][1])[1]</option><option>xpath=(//div[@class='input-group__title input-group__title_required']/following::div[@class='input-group__input input-group__input_date-picker'][1])</option></datalist></td><td>locations</td></tr>
+<tr><td>storeEval</td><td>1<datalist><option>1</option></datalist></td><td>i</td></tr>
+<tr><td>while</td><td>i<=${locations}<datalist><option>i<=${locations}</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//div[@class='input-group__title input-group__title_required']/following::div[@class='input-group__input input-group__input_date-picker'][1])[${i}]<datalist><option>xpath=(//div[@class='input-group__title input-group__title_required']/following::div[@class='input-group__input input-group__input_date-picker'][1])[${i}]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(//tbody/tr/td[@class='cell'])[1]<datalist><option>//tbody/td[@class='cell']</option><option>//tbody/td[@class='cell'][1]</option><option>xpath=(//tbody/td[@class='cell'])[1]</option><option>xpath=(//tbody/tr/td[@class='cell'])[1]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>//button[contains(text(), 'Confirm')]<datalist><option>//button[contains(text(), 'Confirm')]</option></datalist></td><td></td></tr>
+<tr><td>storeEval</td><td>1+${i}<datalist><option>1+${i}</option></datalist></td><td>i</td></tr>
+<tr><td>endWhile</td><td><datalist></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
 <tr><td rowspan="1" colspan="3" data-tags="">CreateShow_ContractValue</td></tr>
 </thead>
 <tbody>
