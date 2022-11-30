@@ -1,4 +1,10 @@
 !!!
+
+Capture data with xpath excluding it part (show cards sample)
+//div[@class='vue-recycle-scroller__item-wrapper']/div[@style!='transform: translateY(-9999px);']/descendant::div[@class='show shows__item']
+div[not(contains(@style, '-9999'))]
+
+
 //a[@class='attachment-title' and contains(text(), '.mp4')]
 //*[contains(text(), 'Log with me')]
 //span[@class='VButton__text' and contains(text(), 'Add')]
